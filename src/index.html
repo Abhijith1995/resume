@@ -77,7 +77,6 @@
      .techused{
         font-style: italic;
         color:  #909090 ;
-        -webkit-print-color-adjust:exact;
 
      }
 
@@ -107,7 +106,7 @@
   color: #272626;
   box-shadow: 0 0 2px #909090;
   cursor: default;
-    font-size: 12px;
+    font-size: 11px;
 
 }
 
@@ -117,7 +116,7 @@
 }
 .length-of-position
 {
-        font-size: 12px;
+        font-size: 14px;
         float:left;
         margin-left: 16px;
         font-color:#909090;
@@ -135,13 +134,23 @@
         padding-bottom: 5px;
         margin-bottom: 5px;
     }
+    .end-section
+    {
+        border-bottom: 1px solid #DFDFE0 ;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
 
     
     .push-down{
         margin-bottom: 6px;
     }
     .push-down-more{
-        margin-bottom: 15px;
+        margin-bottom: 6px;
+    }
+    .push-up
+    {
+        margin-top: 3px;
     }
 
     @media print {
@@ -154,11 +163,22 @@
         
 
     }
-    @media print {
 
     .software-skill {
         background-color: transparent;
         -webkit-print-color-adjust: exact;
+    }
+    .skill-sub-header
+    {
+        font-size: 1pt;
+        font-style: italic;
+        color:  #909090 ;
+            }
+    .coursework li
+    {
+        margin-left: -40px;
+        list-style-type: none;
+        font-size: 14px;
     }
 
     
@@ -195,12 +215,12 @@
             </div>
 
             <div class="col-sm-4 heading contact" style="float:right">
-                <br>
-                Website :<a href="http://www.abhijith1995.github.io" >abhijith1995.github.io </a>
-                <br>
-                GitHub :<a href="https://github.com/Abhijith" >github.com/Abhijith1995</a>
-                <br>
-                LinkedIn : <a href="https://ca.linkedin.com/pub/Abhijith-Ramalingam/81/b71/284">linkedin.com/Abhijith</a>
+                <br><i class="fa  fa-chevron-circle-right "></i> 
+                Website : <a href="http://www.abhijith1995.github.io" > abhijith1995.github.io </a>
+                <br><i class="fa fa-github "></i> 
+                GitHub &nbsp;&nbsp;: <a href="https://github.com/Abhijith" > github.com/Abhijith1995</a>
+                <br><i class="fa fa-linkedin "></i> 
+                LinkedIn : <a href="https://ca.linkedin.com/pub/Abhijith-Ramalingam/81/b71/284"> linkedin.com/Abhijith</a>
             </div>
         </div>
          <div class="row">
@@ -211,75 +231,141 @@
               
                 <div class="skills">
                     <div class="push-down-more">
-                        <div class="position job-title push-down">PROGRAMMING</div>                   
+                        <div class="position job-title">PROGRAMMING</div>                   
                             <div class="techused">
-                                <div class="push-down">
-                                        <span class="software-skill">Java</span>&nbsp;
-                                        <span class="software-skill">Python</span>&nbsp;
-                                        <span class="software-skill">C&#35;</span>&nbsp;
-                                        <span class="software-skill">R</span>&nbsp;
-                                        <span class="software-skill">C++</span>&nbsp;
-                                    </div>
+                                <div>
+                                    General<br>
+                                        <btn class="software-skill">Java</btn>&nbsp;
+                                        <btn class="software-skill">Python</btn>&nbsp;
+                                        <btn class="software-skill">C&#35;</btn>&nbsp;
+                                        <btn class="software-skill">C++</btn>&nbsp;
+                                <br>Front End<br>
+                                    <btn class="software-skill">HTML</btn>&nbsp;
+                                    <btn class="software-skill">CSS</btn>&nbsp;
+                                    <btn class="software-skill">JavaScript</btn>&nbsp;
+                                </div>
                             </div>
                         </div>
 
-                    <div class="push-down-more">
+                    <div>
 
-                    <div class="position job-title push-down">WEB</div>                   
+                    <div class="position job-title ">TOOLS</div>                   
                     <div class="techused">
-                        <div class="push-down">
-                                <btn class="software-skill">HTML</btn>&nbsp;
-                                <btn class="software-skill">CSS</btn>&nbsp;
-
-                                <btn class="software-skill">JavaScript</btn>&nbsp;
-                                    Libraries/Frameworks <br>
-
-                                <btn class="software-skill">jQuery</btn>&nbsp;
-                                <btn class="software-skill">AngularJS</btn>&nbsp;
-                                <btn class="software-skill">D3.js</btn>&nbsp;
-                                <btn class="software-skill">Protractor</btn>&nbsp;
-                                <btn class="software-skill">Karma</btn>&nbsp;
-                                <btn class="software-skill">Jasmine</btn>&nbsp;
-
-                                <btn class="software-skill">Flask</btn>&nbsp;
-                            </div>
-
+                        <div>                              
+                            Libraries/Frameworks <br>
+                            <btn class="software-skill">jQuery</btn>&nbsp;
+                            <btn class="software-skill">AngularJS</btn>&nbsp;
+                            <btn class="software-skill">Flask</btn>
+                            Testing Tools <br>
+                            <btn class="software-skill">Protractor</btn>&nbsp;
+                            <btn class="software-skill">Karma</btn>&nbsp;
+                            <btn class="software-skill">Jasmine</btn>&nbsp;                          
+                         </div>
                     </div>
-                                        </div>
+                    </div>
 
 
-                                        <div class="push-down-more">
 
-                    <div class="position job-title push-down">DATABASE</div>                   
+                    <div class="position  techused">Database</div>                   
 
                      <div class="techused">
                                 <btn class="software-skill">MySQL</btn>&nbsp;
                                 <btn class="software-skill">PostgreSQL</btn>&nbsp;
                                 <btn class="software-skill">MongoDB</btn>&nbsp;
                     </div>
+                    <div class="position push-down job-title push-up">DATA ANALYSIS</div>                   
 
-                </div>
+                     <div class="techused end-section">
+                                <btn class="software-skill">R</btn>&nbsp;
+                                <btn class="software-skill">Pandas</btn>&nbsp;
+                                <btn class="software-skill">Numpy</btn>&nbsp;
+                                <btn class="software-skill">SciPy</btn>&nbsp;
+                                <btn class="software-skill">MapReduce</btn>&nbsp;
+                                <btn class="software-skill">Hadoop</btn>&nbsp;
+
+
+                                <btn class="software-skill">Matplotlib</btn>&nbsp;
+                                <btn class="software-skill">Scikit-learn</btn>&nbsp;
+                                <btn class="software-skill">Machine Learning</btn>&nbsp;
+                                <btn class="software-skill">Statistical Inference</btn>
+
+                    </div>
+
                  </div>
 
+                <div class="heading heading2 sub-header">  <i class="fa fa-book "></i> EDUCATION </div>
 
-                <div class="heading heading2">  <i class="fa fa-book "></i> EDUCATION </div>
              
-                <div class="skills">
-                    Univeristy of Waterloo , Mechatronics Engineering 2018
-                </div>
+                     
+                    <div class="position  job-title">UNIVERSITY OF WATERLOO</div>                   
+                    
+                     <div class ="techused end-section" style="font-size:12px">BASc in Mechatronics Engineering<br> Class of 2018 </div>
 
 
-                <hr>
-                <div class="heading heading2">  <i class="fa fa-star"></i> INTEREST </div>
+
+
+                <div class="heading heading2 sub-header">  <i class="fa fa-star"></i> RELAVANT COURSES </div>
+                <div class="job-title">At University</div>
+                    <div class="techused">
+                        <div>                              
+                           
+                             <div class="">
+                                <ul class="coursework">
+                                <li><a href="http://www.ucalendar.uwaterloo.ca/1415/COURSE/course-MATH.html#MATH116">Calculus for Engineers</a></li>
+                                <li><a href="http://www.ucalendar.uwaterloo.ca/1415/COURSE/course-MATH.html#MATH115">Linear Algebra for Engineers</a></li>
+                                <li><a href="http://www.ucalendar.uwaterloo.ca/1415/COURSE/course-MTE.html#MTE201">Experimental Measurements and Statistical Analysis(current)</a></li>
+                                <li><a href="http://www.ucalendar.uwaterloo.ca/1415/COURSE/course-MTE.html#MTE140">Data Structures and Algorithms</a></li>
+                           
+                            </ul>
+                        </div>
+                    </div>
+                            
+
+                    
              
-                <div class="skills">
-                   <ul>
-                        <li>Software Development</li>
-                        <li> Robotics </li>
-                        <li> Networks and Security </li>
-                        <li> Embedded Systems </li>
-                   </ul>
-                </div>
+             </div>   
+             <div class="job-title" style="font-size:13px">Certificates from online courses</div>
+                    <div class="techused">
+                        <div>                              
+                           
+                             <div class="">
+                                <ul class="coursework">
+                                <li><a href="https://www.coursera.org/maestro/api/certificate/get_certificate?verify-code=KDN2L9TYRB">Intro to Financial Accounting</a></li>
+                                <li><a href="https://www.coursera.org/maestro/api/certificate/get_certificate?verify-code=KUKAQBKA3L">Computational Investing</a></li>
+                                <li><a href="https://www.coursera.org/maestro/api/certificate/get_certificate?verify-code=X9T2VLPCNZ">R Programming</a></li>
+                                <li><a href="https://www.coursera.org/maestro/api/certificate/get_certificate?verify-code=XCGZW9RDTA">Exploratory Data Analysis</a></li>
+                                <li><a href="https://www.coursera.org/maestro/api/certificate/get_certificate?verify-code=K7HMFEJ5T4">Getting and Cleaning Data </a></li>
+
+                                <li><a href="https://www.coursera.org/maestro/api/certificate/get_certificate?verify-code=M4CF5QZNS9">Data Scientist's Toolbox</a></li>
+
+                           
+                            </ul>
+                        </div>
+                    </div>
+                            
+
+                    
+             
+             </div> 
+             <div class="job-title">Audited courses</div>
+                    <div class="techused end-section">
+                        <div>                              
+                           
+                             <div class="">
+                                <ul class="coursework">
+                                <li><a href="https://www.udacity.com/course/ud120">Intro to Machine Learning</a></li>
+                                <li><a href="https://www.udacity.com/course/ud359">Intro to Data Science</a></li>
+                                <li><a href="https://www.udacity.com/course/ud617">Intro to Hadoop and MapReduce</a></li>
+                                <li><a href="https://www.coursera.org/course/ml">Machine Learning</a></li>
+                           
+                            </ul>
+                        </div>
+                    </div>
+                            
+
+                    
+             
+             </div>   
             </div>
             <div class="col-sm-9">
                 <div class="heading heading2 sub-header"> <i class="fa fa-briefcase"></i>  WORK EXPERIENCE </div>
@@ -334,7 +420,7 @@
 
                         <div class="techused">Technologies used :&nbsp;
                                 <btn class="software-skill">C&#35;</btn>&nbsp;
-                                <btn class="software-skill">.NET</btn>&nbsp;
+                                <btn class="software-skill">.NET Framework</btn>&nbsp;
                                 <btn class="software-skill">MySQL</btn>&nbsp;
                                 <btn class="software-skill">PostgreSQL</btn>&nbsp;
                                 <btn class="software-skill">Linux</btn>&nbsp;
