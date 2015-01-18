@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +10,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Spurrya Jaggi</title>
+    <title>Abhijith Ramalingam</title>
 
 
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
     <!-- Custom CSS -->
     <style>
+    .sub-header{
+        border-bottom: 2px solid #DFDFE0 ;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+
+    }
+    .main-header{
+        border-bottom: 2px solid #B0B0B1;
+        padding-bottom: 7px;
+        margin-bottom: 15px;
+
+    }
 
      .content{
         color:  #505050 !important;
@@ -27,7 +40,7 @@
 
      .heading2{
         font-size: 18px;
-	}
+    }
 
      .greybackground{
         
@@ -72,17 +85,44 @@
      }
 
      .contact{
-        text-align:right;
+        text-align:left;
      }
+     .btn {
+      -webkit-border-radius: 2;
+      -moz-border-radius: 2;
+      border-radius: 2;
+      -webkit-box-shadow: 0px 0px 1px #909090;
+      -moz-box-shadow: 0px 0px 1px #909090;
+      font-family: Georgia;
+      color: #909090;
+      font-size: 12px;
+      font-style: italic;
+
+      background: #fff;
+      padding: 3px 6px 3px 6px;
+      text-decoration: none;
+    }   
+
+    .btn:hover {
+      text-decoration: none;
+    }
+    .push-down{
+        margin-bottom: 6px;
+    }
+    .push-down-more{
+        margin-bottom: 15px;
+    }
 
     @media print {
-	    a,
-	    a:link:after,
-	    a:visited:after {
-	        content: "" !important;
-	        color:#337ab7 !important;
-	    }
-	}
+        a,
+        a:link:after,
+        a:visited:after {
+            content: "" !important;
+            color:#337ab7 !important;
+        }
+        
+
+    }
 
 /*    @media print {
          .container {
@@ -106,169 +146,218 @@
     <!-- Page Content -->
     <div class="container content">
 
-        <div class="row">
-            <div class="col-sm-7 col-xs-7">
-
-               <h1> SPURRYA JAGGI </h1>
-               2A Mechatronics Engineer
+        <div class="row main-header">
+            <div class="col-sm-7">
+               <h1> Abhijith Ramalingam </h1>
+            Passionate about Data Analytics, Robots, Math and Programming.
             </div>
 
-            <div class="col-sm-5 col-xs-5 heading contact" >
-
-                Website :<a href="http://www.spurrya.hostoi.com" >spurrya.hostoi.com </a>
+            <div class="col-sm-4 heading contact" style="float:right">
                 <br>
-                GitHub :<a href="https://github.com/Spurrya" >github.com/spurrya</a>
+                Website :<a href="http://www.abhijith1995.github.io" >abhijith1995.github.io </a>
                 <br>
-                LinkedIn : <a href="https://ca.linkedin.com/pub/spurrya-jaggi/81/b71/284">linkedin.com/spurrya</a>
+                GitHub :<a href="https://github.com/Abhijith" >github.com/Abhijith1995</a>
+                <br>
+                LinkedIn : <a href="https://ca.linkedin.com/pub/Abhijith-Ramalingam/81/b71/284">linkedin.com/Abhijith</a>
             </div>
         </div>
-        <hr>
-        <div class="row">
+         <div class="row">
 
             <div class="col-sm-3 col-xs-3"> 
 
-                <div class="heading heading2">  <i class="fa fa-wrench "></i> SKILL SET </div>
-                <hr>
+                <div class="heading heading2 sub-header">  <i class="fa fa-wrench "></i> SKILL SET </div>
+              
                 <div class="skills">
-                    PROGRAMMING
-                    <ul>
-                        <li> Java </li>
-                        <li> C++ </li>
-                        <li> C </li>
-                        <li> RobotC </li>
-                    </ul>
+                    <div class="push-down-more">
+                    <div class="position job-title push-down">PROGRAMMING</div>                   
+                        <div class="techused">
+                            <div class="push-down">
+                                    <btn class="btn">Java</btn>&nbsp;
+                                    <btn class="btn">Python</btn>&nbsp;
+                                    <btn class="btn">C&#35;</btn>&nbsp;
+                                    <btn class="btn">JavaScript</btn>&nbsp;
+                            </div>
+                            <div class="push-down">        
+                                    <btn class="btn">R</btn>&nbsp;
+                                    <btn class="btn">C++</btn>&nbsp;
+                            </div>
+                        </div>
+                    </div>
 
-                    <br>
+                                        <div class="push-down-more">
 
-                    WEB DEVELOPMENT
+                    <div class="position job-title push-down">WEB</div>                   
+                    <div class="techused">
+                        <div class="push-down">
+                                <btn class="btn">jQuery</btn>&nbsp;
+                                <btn class="btn">AngularJS</btn>&nbsp;
+                                <btn class="btn">D3.js</btn>&nbsp;
+                        </div>
+                        <div class="push-down">
+                                <btn class="btn">HTML/CSS</btn>&nbsp;
+                                <btn class="btn">Flask</btn>&nbsp;
+                            </div>
 
-                    <ul>
-                        <li> JavaScript</li>
-                        <li> HTML/CSS </li>
-                        <li> PHP </li>
-                    </ul>
+                    </div>
+                                        </div>
 
-                    <br>
 
-                    DATABASE
+                                        <div class="push-down-more">
 
-                    <ul>
-                        <li> SQL</li>
-                    </ul>
+                    <div class="position job-title push-down">DATABASE</div>                   
+
+                     <div class="techused">
+                                <btn class="btn">MySQL</btn>&nbsp;
+                                <btn class="btn">PostgreSQL</btn>&nbsp;
+                                <btn class="btn">MongoDB</btn>&nbsp;
+                    </div>
+
                 </div>
+                 </div>
 
-                <hr>
+
                 <div class="heading heading2">  <i class="fa fa-book "></i> EDUCATION </div>
-                <hr>
+             
                 <div class="skills">
                     Univeristy of Waterloo , Mechatronics Engineering 2018
                 </div>
-            </div>
-            <div class="col-sm-9 col-xs-9">
-                <div class="heading heading2"> <i class="fa fa-briefcase"></i>  WORK EXPERIENCE </div>
 
+
+                <hr>
+                <div class="heading heading2">  <i class="fa fa-star"></i> INTEREST </div>
+             
+                <div class="skills">
+                   <ul>
+                        <li>Software Development</li>
+                        <li> Robotics </li>
+                        <li> Networks and Security </li>
+                        <li> Embedded Systems </li>
+                   </ul>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="heading heading2 sub-header"> <i class="fa fa-briefcase"></i>  WORK EXPERIENCE </div>
                 <div class="row ">
 
-                    <div class="position col-sm-8 col-xs-8 job-title" >Software and Web Developer</div> 
-                    <div class="company col-sm-4 col-xs-4"><img src="http://mobile.knowroaming.com/icons/front_logo.png" style="height:16px;width:8px;"> KnowRoaming</div>
+                    <div class="position col-sm-8 job-title" >JavaScript Developer</div> 
+                    <div class="company col-sm-4"><img src="http://www.hubhead.com/wp-content/uploads/hubhead-logo_A.jpg" width="90" height="25" alt="" data-original="http://www.hubhead.com/wp-content/uploads/hubhead-logo_A.jpg" style="height:30px width:50px"></div>
 
-                    <div class="col-sm-12 col-xs-12 greybackground">
+                    <div class="col-sm-12 greybackground">
                         <ul>
-                            <li>Developed a GUI based test framework to manage all current and future webpages.</li>
-                            <li>Designed a mobile-friendly website for customer account management.</li>
-                            <li> Develop the full stack implementation of a  web app to keep a track of the packages sent out to the customers. </li>
+                            <li>Managed an automated test suite which ran daily on a continuous integration server.</li>
+                            <li>Wrote scripts to perform unit tests and end to end tests using browser automation tools. </li>
+                            <li>Regularly wrote bug fixes for minor UI issues and improvements.</li>
+                            <li>Participated in all aspects of the software development lifecycle to build a highly scalable, cloud-based data quality solution.</li>
                            
                         </ul>
 
-                        <div class="techused">Technologies used : Java , JavaFX , SQL , JDBC , Selenium , JavaScript , jQuery , PHP </div>
+                        <div class="techused">Technologies used :&nbsp;
+                                <btn class="btn">JavaScript</btn>&nbsp;
+                                <btn class="btn">AngularJS</btn>&nbsp;
+                                <btn class="btn">Git</btn>&nbsp;
+                                <btn class="btn">Karma</btn>&nbsp;
+                                <btn class="btn">Protractor</btn>&nbsp;
+                                <btn class="btn">Jasmine</btn>&nbsp;
+                                <btn class="btn">Jenkins</btn>&nbsp;
+
+
+                        </div>
                     </div>
                 </div>
-                <br>
                 <div class="row ">
 
-                    <div class="position col-sm-8 col-xs-8 job-title" >Infrastruture Security Analyst</div> 
-                    <div class="company col-sm-4 col-xs-4"><img src="http://upload.wikimedia.org/wikipedia/en/5/53/Maple_Leaf_Foods.svg" style="height:20px;width:20px;"> Maple Leaf Foods</div>
+                    <div class="position col-sm-8 job-title" >R&amp;D Team Member</div> 
+                    <div class="company col-sm-4">
+                        <img src="http://www.protecode.com/wp-content/themes/protecode/images/logo.png"  height="15" width="80"> 
+                    </div>
 
-                    <div class="col-sm-12 col-xs-12 greybackground">
+                    <div class="col-sm-12 greybackground">
                         <ul>
-                            <li> Developed a web-crawler to reduce the time and effort for acquiring the data.</li>
-                            <li>Developed and presented weekly and monthly key performance indicator for the security systems</li>
+                            <li>Developed web crawlers to acquire and archive open source projects from popular forges like Github and Sourceforge.com.</li>
+                            <li>Optimized an internal data mining tool, thereby improve proccessing time and results.</li>
+                            <li>Helped in the migration of internal company databases by writing scripts and upgrading pre-existing web crawlers to find and download missing files and content.</li> 
                         </ul>
 
-                         <div class="techused"> Technologies used : Microsoft's SCCM, Cisco's IronPort , FireEye and ePo.</div>
+                        <div class="techused">Technologies used :&nbsp;
+                                <btn class="btn">C&#35;</btn>&nbsp;
+                                <btn class="btn">.NET</btn>&nbsp;
+                                <btn class="btn">MySQL</btn>&nbsp;
+                                <btn class="btn">PostgreSQL</btn>&nbsp;
+                                <btn class="btn">Linux</btn>&nbsp;
+                                <btn class="btn">MS Excel</btn>&nbsp;
+                                <btn class="btn">SVN</btn>&nbsp;
+
+
+                        </div>
                     </div>
                 </div>
                 <hr>
                 <div class="heading heading2"> <i class="fa fa-code"></i> PROJECTS</div>
-
-              
+                <hr>
                 <div class="row ">
 
-                    <div class="position col-sm-8 col-xs-8 job-title" >Pebilepsy</div> 
-                    <div class="company col-sm-4 col-xs-4"><img src="http://hackthenorth.com/img/logo.png" style="height:15px;width:15px;"> Hack the North</div>
-                    <div class="col-sm-12 col-xs-12 greybackground">
-
+                    <div class="position col-sm-8 job-title" >Market Simulator</div> 
+                    <div class="col-sm-12 greybackground">
                         <ul>
                             <li>
-                                Won top pebble award at Canada's largest Hackathon by developing a Nocturnal epilepsy tracker and prevention pebble application.
+                                Built a stock market simulator by accessing data from Yahoo Finance API to understand historical stock trends. 
                             </li>
-                            <li>
-                                Worked as a pair programmer on the Pebble and Android Platforms to capture, store and send information to a server database for further data analytics
-                            </li>
+                            
                         </ul>
                         
-                        <div class="featured">Featured On : <a href="https://news.ycombinator.com/item?id=8372583">Hacker News</a>, <a href="http://challengepost.com/software/pebilepsy"> Challenge Post</a> , <a href="http://www.medgadget.com/2014/09/pebilepsy-uses-fitness-tracker-to-monitor-night-time-seizures.html" > Med Gadgets </a></div>
-                        <div class="techused">Technologies used : Android Development, Pebble API </div>
+                        
+                        <div class="techused">Technologies used : Python(Pandas,Numpy,Matplotlib,SciPy)   </div>
                     </div>
                 </div>
                 <br>
-                <div class="row">
+                <div class="row ">
 
-                    <div class="position col-sm-8 col-xs-8 job-title" >Game Robot</div> 
-                    <div class="company col-sm-4 col-xs-4">University of Waterloo</div>
-                    <div class="col-sm-12 col-xs-12 greybackground">
-
+                    <div class="position col-sm-8 job-title" >New York Subway Data</div> 
+                    <div class="col-sm-12 greybackground">
                         <ul>
                             <li>
-                                Built a joystick-controlled robot which could retrive objects.
+                                Used statitstical infernce techniques to understand New York Subway data.
                             </li>
+                            
                         </ul>
-
-                        <div class="techused"> Technologies used : RobotC , NXT Mindstorm Robot</div>
+                        
+                        
+                        <div class="techused">Technologies used : Python(Pandas,Numpy,Matplotlib,SciPy)   </div>
                     </div>
                 </div>
 
 
                 <br>
-                <div class="row">
+                <div class="row ">
 
-                    <div class="position col-sm-8 col-xs-8 job-title" >Temperature Map</div> 
-                    <div class="company col-sm-4 col-xs-4"></div>
-                    <div class="col-sm-12 col-xs-12 greybackground">
-
+                    <div class="position col-sm-8 job-title" >TransitCheck</div> 
+                    <div class="col-sm-12 greybackground">
                         <ul>
                             <li>
-                               Allows the user to browse map and retrive the current time and temperature of the location the user picks. 
+                                Worked as pair programmer to build the front end for a web application which alerts TTC users of situational delays.
                             </li>
+                            <li>
+                                Built a web crawler to programatically acquire information about TTC services which was then stored in a NoSQL database for fast retrieval. 
+                            </li>
+                            
                         </ul>
-
-                        <div class="techused"> Technologies used : Google Map API , Temperature API , jQuery , AJAX</div>
+                        
+                        
+                        <div class="techused">Technologies used : HTML/CSS jQuery Java MongoDB  </div>
                     </div>
                 </div>
 
                 <br>
                 <div class="row">
-
-                    <div class="position col-sm-8 col-xs-8 job-title" >Exam Schedular</div> 
-                    <div class="company col-sm-4 col-xs-4"></div>
-                    <div class="col-sm-12 col-xs-12 greybackground">
-
+                    <div class="position col-sm-8 job-title" >Braillestorm </div> 
+                    <div class="company col-sm-4"></div>
+                    <div class="col-sm-12 greybackground">
                         <ul>
                             <li>
-                                Allows a UW Student to view their exam schedule and add it to google calendar.
+                                Won a national robot olympiad by building a robot which provides an easy to use interface for visually impaired users to print  Braille
                             </li>
                         </ul>
-                        <div class="techused"> Technologies used : Waterloo API , jQuery , AJAX</div>
+                        <div class="techused"> Technologies used : LEGO Mindstorms C++</div>
                     </div>
                 </div>
              </div>
