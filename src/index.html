@@ -98,22 +98,19 @@ font-weight: bold;
   -webkit-print-color-adjust:exact;
   margin-top: -5px;
 }
-
-.jsection{
-  margin-top: 0.3em;
-}
-
+  
 li
 {
     font-size:12px;
       margin-left: -50px;
   list-style-type:disc;
 }
+
 .details {
   padding-top: 0.3em;
   font-size: 14px;
   line-height: 1.2em;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.5em;
 }
 
 
@@ -153,7 +150,12 @@ hr{
   border-bottom: 1px solid #E6E6E6;
   margin-bottom: 10px;
 }
-
+.tech h5{
+  padding-bottom: 4px;
+}
+.tech {
+  line-height: 1.475em;
+}
 </style>
 
 
@@ -185,18 +187,20 @@ hr{
         <div class="row">
             <div class="col-sm-3 col-xs-3">
             <div class="heading" >SKILLS</div><hr>
-            <div class="skills" style="padding-bottom:8px">
+            <div class="skills tech" style="padding-bottom:14px">
               <p><h5><b>Languages:</b></h5> Python, Java, JavaScript, C/C++, Ruby, C#</p>
-              <p><h5><b>Web:</b></h5> Angular, Bootstrap, jQuery, Rails, Django, MySQL, PostgreSQL, MongoDB, Node.js, Socket.io</p>
-              <p><h5><b>Data Analysis:</b></h5> R, Matlab, Machine Learning, Numpy, SciPy, Matplotlib, Scikit-learn, D3.js</p>
-              <p><h5><b>Tools:</b></h5> Git, SVN, RabbitMQ, LINQ, Powershell </p>
+              <p><h5><b>Web:</b></h5> HTML/CSS Angular, Bootstrap<br> jQuery, Rails, Django , Node.js<br> MySQL, PostgreSQL, MongoDB, Socket.io</p>
+              <p><h5><b>Data Analysis:</b></h5> R, Matlab, Numpy, SciPy, Matplotlib, Scikit-learn, D3.js</p>
+              <p><h5><b>Tools:</b></h5> Git, SVN, RabbitMQ, Hadoop </p>
               <p><h5><b>Testing:</b></h5> Jasmine, Karma, Selenium</p>
-              <p><h5><b>Embedded:</b></h5>PLC, FPGA, Keil, Arduino</p>
+              <p><h5><b>Embedded:</b></h5>PLC, Keil, Arduino</p>
+              <!-- <span></span> -->
             </div>
             <hr>
             <div class="heading">HACKATHONS</div><hr>
             <div class="skills">
-               <p><h5><b>AngelHack 2015</b></h5> Built a chat app with a realtime poll using Ruby on Rails to allow users to discuss housing options</p>
+               <p><h5><b>AngelHack 2015</b></h5> Built a chat app with a realtime poll using Ruby on Rails to allow users to discuss housing options. Integrated
+                app with Firebase &amp; Branch Analytics.</p>
                 <p><h5><b>BattleHack 2014</b></h5> Developed the database for an application which alerts user of situational delays in TTC services using Node.js and a web crawler in Java</p>
             <p><h5><b> Hack The North 2014</b></h5>Worked with Angular.js to build an application to help developers understand new  codebases through intuitive graph visualizations</p>
            
@@ -213,7 +217,9 @@ hr{
             <hr> -->
             <div class="heading">EDUCATION</div><hr>
             <div class="skills">
-            <p><h5><b>University of Waterloo</b></h5> 3A Mechatronics Engineering Graduating May, 2018 </p>
+            <p><h5><b>University of Waterloo</b></h5> 3A Mechatronics Engineering 
+              <br> Cumalative GPA 83% 
+              <br>Graduating May, 2018 </p>
             </div>
 
           </div>
@@ -227,14 +233,14 @@ hr{
                 <div class="row">
                     <div class="col-xs-3">
                       <span class="company">Wave</span> <br>
-                      <span class="position">Distributed Systems Engineering</span><br>
+                      <span class="position">Distributed Systems Engineer</span><br>
                       <span class="techused">Toronto, ON</span><br>
                       <span class="techused">Winter 2016</span>
                        </div>
                     <div class="col-sm-9 col-xs-9 greybackground">
                         <div class ="details">
                           <ul>
-                            <li> Built scalable, fault-tolerant, API-centric backend services for the Wave payments platform with message queues, Elastisearch, Python and Django </li>
+                            <li> Built scalable, fault-tolerant, API-centric backend services for the Wave payments platform with message queues, Elasticsearch, Python and Django </li>
                             <li> Worked in an agile environment taking part in pair programming, code reviews and architecture discussions </li>
                             <li> Gained knowledge in REST, SOA, domain modelling and multi-threading</li>
                           </ul>
@@ -287,7 +293,7 @@ hr{
                       </div>
                     </div>
                 </div>
-                <div class="row" style="margin-top:0.2em;padding-bottom:98px;">
+                <div class="row" style="margin-top:0.2em;padding-bottom:100px;">
                     <div class="col-sm-3 col-xs-3" >
                       <span class="company">Protecode Inc.</span><br>
                       <span class="position">Jr Developer &amp; QA</span><br>
@@ -368,8 +374,7 @@ to a 25% reduction in project processing time
                       <div class ="details" >
                         <ul >
                           <li>
-                            Wrote a game in C which runs on a Keil microcontroller which simulates bouncing balls on an LCD screen. Used priority queues, semaphores and hardware interrupts
-                            to interface with peripherals like a joystick.
+                            Wrote a game in C which runs on a Keil microcontroller which simulates bouncing balls on an LCD screen. Used a multi-threaded architecture which included semaphore locks and  interrupts to interface with peripherals.
                           </li>
                           <li>
                             Developed a C program to dynamically allocate memory in O(1) time.
@@ -396,66 +401,57 @@ to a 25% reduction in project processing time
                              Calibrated an infrared sensor using Arduino and Python to measure distance.
                           </li>
                           <li>
-                              Used machine learning algorithms like Nearest Neighbour Search and other statistical technqiues to improve accuracy to 0.15 cm
+                              Used machine learning algorithms like Nearest Neighbour Search and other statistical techniques to improve accuracy to 0.15 cm
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="row three-line">
+                  <div class="row jsection four-line" style="margin-top:10px">
                     <div class="col-sm-3 col-xs-3" >
-                      <span class="company"><b>Crib</b></span><br>
-                      <span class="position">Web Developer </span><br>
-                      <span class="date">June 2015 </span>
+                      <span class="company">Noise Filtering &amp; Audio Transcription</span><br>
+                      <span class="position">MATLAB Developer </span><br>      
+                      <span class="date">Dec 2015 </span>
+
                     </div>
                     <div class="col-sm-9 col-xs-9 greybackground">
                       <div class ="details" >
                         <ul >
                           <li>
-                             Built a chat app with a realtime poll for large groups of students to discuss housing options, implemented using Node.js and  Socket.io
+                            Removed noise from audio clips using signal filters made in MATLAB.
                           </li>
                           <li>
-                              Developed entirely in 24 hours as part of AngelHack Toronto 2015
+                            Used frequency analysis to transcribe classical piano pieces into sheet music.
+                          </li>
+                          <li>
+                            Resynthesized audio from transcription and used statitical analysis methods to compare original and resynthesized signal.
                           </li>
                         </ul>
                       </div>
                     </div>
-                  </div> -->
+                  </div>
 
                   <div class="row three-line" >
                     <div class="col-sm-3 col-xs-3" >
                       <span class="company">Airless Tire</span><br>
-                      <span class="position">Analyst </span><br>
+                      <span class="position">Data Analyst </span><br>
+                      <span class="date">Sep-Nov 2015 </span>
                     </div>
                     <div class="col-sm-9 col-xs-9 greybackground">
                       <div class ="details" >
                         <ul >
 
                           <li>
-                             Used Solidworks, MATLAB and ANSYS to design a CAD model of an airless tire and simulate stress deformations across terrains
+                             Used Solidworks and ANSYS to design a CAD model of an airless tire and simulate stress deformations across varying terrains
+                          </li>
+                          <li>
+                             Calculated stresses and deformations of truss structures using MATLAB.
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="row jsection three-line" style="margin-top:10px">
-                    <div class="col-sm-3 col-xs-3" >
-                      <span class="company">Noise Filtering</span><br>
-                      <span class="position">Developer </span><br>
-                    </div>
-                    <div class="col-sm-9 col-xs-9 greybackground">
-                      <div class ="details" >
-                        <ul >
-                          <li>
-                            Removed noise from audio clips using signal filters made in MATLAB
-                          </li>
-                          <li>
-                             Accurately reported the number of peaks in the filtered audio clips.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  
                  <!--  <div class="row ">
                     <div class="col-sm-3 col-xs-3" >
                       <span class="company"></span><br>
