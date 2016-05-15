@@ -41,35 +41,36 @@
     margin-bottom: 0px;
     font-weight: 500;
   }
-
-  .skill-title{
-    font-family: Lato;
-    font-weight: 700;
+  li
+  {
+    font-size:11px;
+    margin-left: -50px;
+    list-style-type:none;
   }
-
 
   .exp .row{
     height: 77px !important;
   }
-
+  .skill-title{
+    font-family: Lato;
+    font-weight: 700;
+  }
   .heading{
+    color: #003399;
     font-family: Raleway;
-    color: darkblue;
     font-size: 18px;
     font-weight: 300;
     padding-bottom:10px;
     -webkit-print-color-adjust:exact;
   }
-
-
-
+  .accent-color{
+    color: #003399
+  }
   .company{
     font-family: Raleway;
     font-size: 12px;
 
   }
-
-
   .job-title{
     font-family: Lato;
     font-weight: 700;
@@ -78,417 +79,334 @@
   .place-date{
     font-style: italic;
     font-size: 10px;
-
   }
-
-  li
-  {
-    font-size:11px;
-    margin-left: -50px;
-    list-style-type:none;
-  }
-
   .details {
     padding-top: 0.3em;
     font-size: 14px;
     line-height: 1.2em;
     padding-bottom: 0.5em;
   }
-
-  .name-top{
-    margin-top: 20px;
-    margin-bottom:10;
+  .main-name{
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
   }
+  .second-column-heading{
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+
   @media print {
     a,
     a:link:after,
     a:visited:after {
       content: "" !important;
-      color:#337ab7 !important;
-    },
-  }
-  @media print {
-    .heading {
-      content: "" !important;
-      color: darkblue !important;
-
+      },
     }
-  }
+    @media print {
+      .heading,.accent-color {
+        content: "" !important;
+        color: #003399 !important;
 
+      }
+    }
+    </style>
+  </head>
 
-  .padding{
+  <body>
 
-    padding-top: 5px;
-  }
+    <div class="container content">
 
-
-  hr{
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-  .main-name{
-    margin-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
-  }
-  .tech h5{
-    padding-bottom: 4px;
-  }
-  .tech {
-    line-height: 1.475em;
-  }
-  #school{
-    font-size: 13px;
-    margin-top: 5px;
-    font-weight: bold;
-
-  }
-  </style>
-
-
-
-</head>
-
-<body>
-
-  <div class="container content">
-
-    <div class="row main-name" >
-      <div class="col-sm-8 col-xs-8">
-        <h1> Abhijith  Ramalingam </h1>
+      <div class="row main-name" >
+        <div class="col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2">
+          <h1>&nbsp;&nbsp;&nbsp; Abhijith  <span class="accent-color">Ramalingam </span></h1>
+        </div>
       </div>
 
-      <!-- <div class="col-xs-2 col-sm-2"></div> -->
-      <div class="col-sm-4  col-xs-4">
-        <div></div>
-        <i class="fa fa-envelope"></i> Email : <a href="mailto:a2ramali@uwaterloo.ca"> a2ramali@uwaterloo.ca </a>
-        <br>
-        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Website :<a href="http://www.abhijith.info" > abhijith.info </a>
-        <br>
-        <i class="fa fa-github-square"></i> Github :<a href="https://github.com/Abhijith1995" > github.com/Abhijith1995</a>
-        <!--                 <br>
-        <i class="fa fa-linkedin-square"></i> Linkedin : <a href="https://ca.linkedin.com/pub/spurrya-jaggi/81/b71/284">linkedin.com/spurrya</a> -->
-      </div>
-    </div>
+      <div class="row">
+        <div class="col-sm-9 col-xs-9" style="padding-right:0px;">
+          <div class="exp">
 
-    <div class="row">
-      <div class="col-sm-9 col-xs-9" style="padding-right:0px;">
-        <div class="exp">
-
-          <div class="heading">
-            WORK EXPERIENCE
-          </div>
-          <div class="row">
-            <div class="col-xs-3">
-              <span class="job-title">Distributed Systems Engineer </span><br>
-              <span class="company">Wave Accounting</span> <br>
-              <span class="place-date">Toronto, Winter 2016</span>
-            </div>
-            <div class="col-sm-9 col-xs-9 greybackground">
-              <div class ="details">
-                <ul>
-                  <li> Wrote front end components in ES6, React, Immutable.js and Redux.</li>
-                  <li> Developed and shipped scalable, fault-tolerant backend services for the <br>
-                    accounting product with Python, Django, Redis and Message Queues</li>
-                    <li> Gained experience in TDD, Event Sourcing, CQRS and Domain Modelling.</li>
-                  </ul>
-                </div>
-
-              </div>
+            <div class="heading">
+              WORK EXPERIENCE
             </div>
             <div class="row">
               <div class="col-xs-3">
-                <span class="job-title">R&amp;D Developer</span><br>
-                <span class="company">IFDS Group</span> <br>
-                <span class="place-date">Toronto, Spring 2015</span>
+                <span class="job-title">Distributed Systems Engineer </span><br>
+                <span class="company">Wave Accounting</span> <br>
+                <span class="place-date">Toronto, Winter 2016</span>
               </div>
               <div class="col-sm-9 col-xs-9 greybackground">
                 <div class ="details">
                   <ul>
-                    <li> Wrote features for a dataset reducing engine using Hadoop and Rails.</li>
-                    <li> Developed a GUI in Python which uses classification algorithms to <br>authenticate clients based on data streamed from wearables.</li>
-                    <!-- <li> Built a prototype image viewer with Node.js, Bootstrap and websockets.</li> -->
-                  </ul>
+                    <li> Wrote front end components in ES6, React, Immutable.js and Redux.</li>
+                    <li> Developed and shipped scalable, fault-tolerant backend services for the <br>
+                      accounting product with Python, Django, Redis and Message Queues</li>
+                      <li> Gained experience in TDD, Event Sourcing, CQRS and Domain Modelling.</li>
+                    </ul>
+                  </div>
+
                 </div>
               </div>
-            </div>
-            <div class="row ">
-              <div class="col-xs-3" >
-                <span class="job-title">Test Developer</span> <br>
-                <span class="company">HubHead</span><br>
-                <span class="place-date">Toronto, Fall 2014</span>
-              </div>
-              <div class=" col-sm-9 col-xs-9 greybackground">
-                <div class ="details" >
-                  <ul>
-
-                    <li>
-                      Wrote end to end and unit tests for a cloud-based data quality product <br>using Angular.js, Protractor, Karma and Selenium.</li>
-                      <li>Detected bugs by running automated test suites on a Jenkins CI server.
-                      </li>
-                    </div>
+              <div class="row">
+                <div class="col-xs-3">
+                  <span class="job-title">R&amp;D Developer</span><br>
+                  <span class="company">IFDS Group</span> <br>
+                  <span class="place-date">Toronto, Spring 2015</span>
+                </div>
+                <div class="col-sm-9 col-xs-9 greybackground">
+                  <div class ="details">
+                    <ul>
+                      <li> Wrote features for a dataset reducing engine using Hadoop and Rails.</li>
+                      <li> Developed a GUI in Python which uses classification algorithms to <br>authenticate clients based on data streamed from wearables.</li>
+                      <!-- <li> Built a prototype image viewer with Node.js, Bootstrap and websockets.</li> -->
+                    </ul>
                   </div>
                 </div>
-                <div class="row ">
-                  <div class="col-xs-3" >
-                    <span class="job-title">Junior Developer</span><br>
-                    <span class="company">Protecode</span><br>
-                    <span class="place-date">Ottawa, Winter 2014</span>
-                  </div>
-                  <div class=" col-sm-9 col-xs-9 greybackground">
-                    <div class ="details" >
-                      <ul>
-                        <li>
-                          Downloaded over 120,000 projects into a MySQL database <br>from websites like
-                          Github and SourceForge by writing web crawlers in C#.
-                          <li>Optimised SQL of a data warehousing GUI increasing throughput by 25%.
-                          </li>
-                        </div>
+              </div>
+              <div class="row ">
+                <div class="col-xs-3" >
+                  <span class="job-title">Test Developer</span> <br>
+                  <span class="company">HubHead</span><br>
+                  <span class="place-date">Toronto, Fall 2014</span>
+                </div>
+                <div class=" col-sm-9 col-xs-9 greybackground">
+                  <div class ="details" >
+                    <ul>
+
+                      <li>
+                        Wrote end to end and unit tests for a cloud-based data quality product <br>using Angular.js, Protractor, Karma and Selenium.</li>
+                        <li>Detected bugs by running automated test suites on a Jenkins CI server.
+                        </li>
                       </div>
                     </div>
-
-
                   </div>
-                  <div class="projects">
-
-                    <div class="heading">PROJECTS</div>
-
-                    <div class="row  three-line">
-                      <div class="col-sm-3 col-xs-3" >
-                        <span class="job-title">Python Developer</span><br>
-                        <span class="company">Market Simulator </span><br>
-                        <span class="place-date">Sept-Dec 2014 </span>
-                      </div>
-                      <div class="col-sm-9 col-xs-9 greybackground">
-                        <div class ="details" >
-                          <ul >
-                            <li >
-                              Developed a program that accepts trade orders for stocks at past dates <br>to
-                              calculate profit using data from Yahoo Finance API.
+                  <div class="row ">
+                    <div class="col-xs-3" >
+                      <span class="job-title">Junior Developer</span><br>
+                      <span class="company">Protecode</span><br>
+                      <span class="place-date">Ottawa, Winter 2014</span>
+                    </div>
+                    <div class=" col-sm-9 col-xs-9 greybackground">
+                      <div class ="details" >
+                        <ul>
+                          <li>
+                            Downloaded over 120,000 projects into a MySQL database <br>from websites like
+                            Github and SourceForge by writing web crawlers in C#.
+                            <li>Optimised SQL of a data warehousing GUI increasing throughput by 25%.
                             </li>
-                            <li>Generated trade orders based on stock price volatility using Bollinger bands</li>
-
-                          </ul>
+                          </div>
                         </div>
                       </div>
+
+
                     </div>
-                    <br>
+                    <div class="projects">
 
-                    <div class="row  three-line">
-                      <div class="col-sm-3 col-xs-3" >
-                        <span class="job-title">Hardware Design</span><br>
-                        <span class="company">Path Follower</span><br>
-                        <span class="place-date">Sept-Nov 2015 </span>
-                      </div>
-                      <div class="col-sm-9 col-xs-9 greybackground">
-                        <div class ="details" >
-                          <ul >
-                            <li>
-                              Soldered and configured sensors and motors onto a PCB creating a small robot.</li><li> Tested sensors using oscilloscope, signal generator and multimeter.
-                              </li>
-                              <li> Programmed the robot in C to follow a path using magnetic and light sensors </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row  four-line" >
+                      <div class="heading">PROJECTS</div>
+
+                      <div class="row">
                         <div class="col-sm-3 col-xs-3" >
-                          <span class="job-title">Embedded Systems Engineer</span><br>
-                          <span class="company">Keil Projects</span><br>
-                          <span class="place-date">Oct-Nov 2015 </span>
-
+                          <span class="job-title">Developer</span><br>
+                          <span class="company">Machine Learning Experiments</span><br>
+                          <span class="place-date">Feb 2016 -Present</span>
                         </div>
                         <div class="col-sm-9 col-xs-9 greybackground">
                           <div class ="details" >
                             <ul >
                               <li>
-                                Wrote a game in C for a Keil microcontroller that simulates bouncing balls <br>
-                                on a LCD screen. Used a multi-threaded architecture, semaphore locks and <br>
-                                hardware interrupts to interface with peripherals.
-                              </li>
-                              <li>
-                                Developed a C program to dynamically allocate memory in O(1) time.
-                              </li>
-
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row  four-line" >
-                        <div class="col-sm-3 col-xs-3" >
-                          <span class="job-title">Data Analyst</span><br>
-                          <span class="company">Distance Sensor</span><br>
-                          <span class="place-date">March 2015 </span>
-                        </div>
-                        <div class="col-sm-9 col-xs-9 greybackground">
-                          <div class ="details" >
-                            <ul >
-                              <li >
-                                Calibrated an infrared sensor using Arduino and Python to measure distance.
-                              </li>
-                              <li>
-                                Used machine learning algorithms like Nearest Neighbour Search and <br>Polynomial Regression to reduce measurement uncertainty to 0.15 cm
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row  four-line" style="margin-top:10px">
-                        <div class="col-sm-3 col-xs-3" >
-                          <span class="job-title">Digital Signals Processing </span><br>
-                          <span class="company">Audio Transcriber</span><br>
-                          <span class="place-date">Dec 2015 </span>
-
-                        </div>
-                        <div class="col-sm-9 col-xs-9 greybackground">
-                          <div class ="details" >
-                            <ul >
-                              <li>
-                                Removed noise from audio clips using signal filters made in MATLAB.
-                              </li>
-                              <li>
-                                Used frequency analysis to transcribe classical piano pieces into sheet music.
-                              </li>
-                              <li>
-                                Resynthesized audio from transcription and used statitical analysis <br> to compare original and resynthesized signal.
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row three-line" >
-                        <div class="col-sm-3 col-xs-3" >
-                          <span class="job-title">Developer </span><br>
-                          <span class="company">TransitCheck</span><br>
-                          <span class="place-date">June 2014 </span>
-                        </div>
-                        <div class="col-sm-9 col-xs-9 greybackground">
-                          <div class ="details" >
-                            <ul >
-
-                              <li>
-                                Worked in a 4 person team for BattleHack 2014 to build an application <br>which alerts user of situational delays in TTC services
-                                <br> Worked on front features using HTML/CSS and wrote a web crawler in Java.                        </li>
+                                Wrote programs using Python, Numpy, Scikit-learn, Matplotlib and Pandas <br>
+                                to perform classification and regression tasks on online datasets
+                                <li> Developed an understanding of methods like K Nearest Neighbours, SVMs <br>
+                                  and Neural Networks and their applications in solving real life problems</li>
                               </ul>
                             </div>
                           </div>
                         </div>
-                        <div class="row three-line" >
+                        <div class="row">
+                          <div class="col-sm-3 col-xs-3" >
+                            <span class="job-title">Digital Signals Processing </span><br>
+                            <span class="company">Audio Transcriber</span><br>
+                            <span class="place-date">Dec 2015 </span>
+
+                          </div>
+                          <div class="col-sm-9 col-xs-9 greybackground">
+                            <div class ="details" >
+                              <ul >
+                                <li>
+                                  Removed noise from audio clips using signal filters made in MATLAB.
+                                </li>
+                                <li>
+                                  Used frequency analysis to transcribe classical piano pieces into sheet music.
+                                </li>
+                                <li>
+                                  Resynthesized audio from transcription and used statitical analysis <br> to compare original and resynthesized signal.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row" >
+                          <div class="col-sm-3 col-xs-3" >
+                            <span class="job-title">Embedded Systems Engineer</span><br>
+                            <span class="company">Keil Projects</span><br>
+                            <span class="place-date">Oct-Nov 2015 </span>
+
+                          </div>
+                          <div class="col-sm-9 col-xs-9 greybackground">
+                            <div class ="details" >
+                              <ul >
+                                <li>
+                                  Wrote a game in C for a Keil microcontroller that simulates bouncing balls <br>
+                                  on a LCD screen. Used a multi-threaded architecture, semaphore locks and <br>
+                                  hardware interrupts to interface with peripherals.
+                                </li>
+                                <li>
+                                  Developed a C program to dynamically allocate memory in O(1) time.
+                                </li>
+
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                      <div class="row">
+                        <div class="col-sm-3 col-xs-3" >
+                          <span class="job-title">Hardware Design</span><br>
+                          <span class="company">Path Follower</span><br>
+                          <span class="place-date">Sept-Nov 2015 </span>
+                        </div>
+                        <div class="col-sm-9 col-xs-9 greybackground">
+                          <div class ="details" >
+                            <ul >
+                              <li>
+                                Soldered and configured sensors and motors onto a PCB creating a small robot.</li><li> Tested sensors using oscilloscope, signal generator and multimeter.
+                                </li>
+                                <li> Programmed the robot in C to follow a path using magnetic and light sensors </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row" >
+                          <div class="col-sm-3 col-xs-3" >
+                            <span class="job-title">Data Analyst</span><br>
+                            <span class="company">Distance Sensor</span><br>
+                            <span class="place-date">March 2015 </span>
+                          </div>
+                          <div class="col-sm-9 col-xs-9 greybackground">
+                            <div class ="details" >
+                              <ul >
+                                <li >
+                                  Calibrated an infrared sensor using Arduino and Python to measure distance.
+                                </li>
+                                <li>
+                                  Used machine learning algorithms like Nearest Neighbour Search and <br>Polynomial Regression to reduce measurement uncertainty to 0.15 cm
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-sm-3 col-xs-3" >
+                            <span class="job-title">Python Developer</span><br>
+                            <span class="company">Market Simulator </span><br>
+                            <span class="place-date">Sept-Dec 2014 </span>
+                          </div>
+                          <div class="col-sm-9 col-xs-9 greybackground">
+                            <div class ="details" >
+                              <ul >
+                                <li >
+                                  Developed a program that accepts trade orders for stocks at past dates <br>to
+                                  calculate profit using data from Yahoo Finance API.
+                                </li>
+                                <li>Generated trade orders based on stock price volatility using Bollinger bands</li>
+
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row" >
                           <div class="col-sm-3 col-xs-3" >
                             <span class="job-title">Developer </span><br>
-                            <span class="company">Crib</span><br>
-                            <span class="place-date">Jan 2016 </span>
+                            <span class="company">TransitCheck</span><br>
                           </div>
                           <div class="col-sm-9 col-xs-9 greybackground">
                             <div class ="details" >
                               <ul >
 
                                 <li>
-                                  Built a chat app for ConUHacks 2016 using Ruby on Rails. <br>
-                                  Added features like a realtime poll to allow users to add and discuss options. <br>
-                                  Integrated the application with Firebase API &amp; Branch Analytics.
+                                  Worked in a 4 person team for BattleHack 2014 to build an application <br>which alerts user of situational delays in TTC services
                                 </ul>
                               </div>
                             </div>
                           </div>
-
-                          <!--  <div class="row ">
-                          <div class="col-sm-3 col-xs-3" >
-                          <span class="company"></span><br>
-                          <span class="job-title">Embedded Developer </span><br>
-                          <span class="date">March 2015 </span>
+                          </div>
                         </div>
-                        <div class="col-sm-9 col-xs-9 greybackground">
-                        <div class ="details" >
-                        <ul >
-                        <li>
-                        Soldered electrical components on a PCB such as op-amps, resistors and transistors to design light, magnetic and rotation sensors from scratch.
-                      </li>
-                      <li>
-                      Programmed a microprocessor in C to control the robot to travel along a race track
-                    </li>
-                  </ul>
+                        <div class="col-sm-3 col-xs-3">
+                          <div class="heading" >SKILLS</div>
+                          <div class="skills tech">
+                            <p><span class="skill-title">Languages: </span>Python, Java, JavaScript, C/C++, Ruby, C#</p>
+                            <p><span class="skill-title">Web: </span>HTML/CSS, jQuery, React, Rails, Django , Node</p>
+                            <p><span class="skill-title">Data Analysis: </span>R, Matlab, Numpy, Scikit-learn</p>
+                            <p><span class="skill-title">Other: </span>Hadoop, Spark, PostgreSQL, MongoDB, RabbitMQ, Redis</p>
+                            <p><span class="skill-title">Testing: </span>Jasmine, Selenium<p>
+                              <p><span class="skill-title">Embedded: </span>Keil, Arduino</p>
+
+                              <!-- <span></span> -->
+                            </div>
+                            <div style="padding-bottom:61px"></div>
+                            <div class="heading">LINKS</div>
+                            <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:a2ramali@uwaterloo.ca">a2ramali@uwaterloo.ca </a>
+                            <br>
+                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp;&nbsp;<a href="http://www.abhijith.info" > www.abhijith.info </a>
+                            <br>
+                            <i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://github.com/Abhijith1995" > github.com/Abhijith1995</a>
+                            <br>
+                            <div style="padding-bottom:120px"></div>
+                            <div class="heading">EDUCATION</div>
+                            <div class="second-column-heading">University of Waterloo</div>
+                            <p>
+                              <span style="font-size:10px">3A Mechatronics Engineering<br>
+                                GPA: 84%, Graduating May 2018
+                              </span>
+                            </p>
+                            <div style="padding-bottom:60px"></div>
+                            <div class="heading">COURSEWARE</div>
+                            <div class="second-column-heading">Machine Learning</div>
+                            <p>Andrew Ng | Coursera</p>
+                            <div class="second-column-heading">Computational Investing</div>
+                            <p>Tucker Balch | Coursera</p>
+                            <div class="second-column-heading">Intro to AI</div>
+                            <p> Sebastian Thrun | Udacity</p>
+
+                          </div>
+
+                        </div>
+                        <!-- <div class="skills">
+                        <p><h5><b>AngelHack 2015</b></h5> Built a chat app with a realtime poll using Ruby on Rails to allow users to discuss housing options. Integrated
+                        app with Firebase &amp; Branch Analytics.</p>
+                        <p><h5><b>BattleHack 2015</b></h5> Developed the database for an application which alerts user of situational delays in TTC services using Node.js and a web crawler in Java</p>
+                      </div> -->
+
+                    </div>
+
+                  </div>
+                  <!-- /.row -->
+
                 </div>
-              </div>
-            </div>
-            <br> -->
+                <!-- /.container -->
+
+                <!-- jQuery Version 1.11.1 -->
+                <script src="js/jquery.js"></script>
+
+                <!-- Bootstrap Core JavaScript -->
+                <script src="js/bootstrap.min.js"></script>
+                <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
+              </body>
 
-            <!--  <li>
-            <strong>Fuel Cell Car- </strong> Programmed a MSP430 microcontroller in C attached to a fuel cell car to control it to travel along a race track
-
-          </li>
-          <li>
-          <strong>NXT Robot- </strong> Programmed a robot in RobotC using NXT to find and retrive objects on the floor.
-        </li>
-
-        <div class="row">
-
-        <div class="job-title col-sm-8 col-xs-8 job-title" ><b>Web and Android</b></div>
-        <div class="company col-sm-4 col-xs-4"></div>
-        <div class="col-sm-12 col-xs-12 greybackground">
-
-        <ul>
-        <li>
-        <strong>Crib</strong> - Web Application for landlords and students in large groups to help discuss and negotiate more easily implemented using Node.js, Socket.io and Branch.io.
-      </li>
-      <li>
-      <strong>FindMe-  </strong> Android application that retrives information about any store on Google Map including information such as email, hours, contact information
-    </li>
-    <li>
-    <strong>Temperature Map- </strong> Allows the user to visually see the current temperature on world map
-  </li>
-</ul>
-</div> -->
-</div>
-</div>
-<div class="col-sm-3 col-xs-3">
-  <div class="heading" >SKILLS</div>
-  <div class="skills tech">
-    <p><span class="skill-title">Languages: </span>Python, Java, JavaScript, C/C++, Ruby, C#</p>
-    <p><span class="skill-title">Web: </span>HTML/CSS, jQuery, React, Rails, Django , Node</p>
-    <p><span class="skill-title">Data Analysis: </span>R, Matlab, Numpy, Scikit-learn</p>
-    <p><span class="skill-title">Other: </span>Hadoop, Spark, PostgreSQL, MongoDB, RabbitMQ, Redis</p>
-    <p><span class="skill-title">Testing: </span>Jasmine, Selenium<p>
-      <p><span class="skill-title">Embedded: </span>Keil, Arduino</p>
-
-      <!-- <span></span> -->
-    </div>
-    <div style="padding-bottom:61px"></div>
-    <div class="heading">EDUCATION</div>
-    <div id="school">University of Waterloo</div>
-    <p>
-      <span style="font-size:10px">3A Mechatronics Engineering<br>
-        GPA: 85%, Graduating May 2018
-      </span>
-    </p>
-  </div>
-
-</div>
-<!-- <div class="skills">
-<p><h5><b>AngelHack 2015</b></h5> Built a chat app with a realtime poll using Ruby on Rails to allow users to discuss housing options. Integrated
-app with Firebase &amp; Branch Analytics.</p>
-<p><h5><b>BattleHack 2015</b></h5> Developed the database for an application which alerts user of situational delays in TTC services using Node.js and a web crawler in Java</p>
-</div> -->
-
-</div>
-
-</div>
-<!-- /.row -->
-
-</div>
-<!-- /.container -->
-
-<!-- jQuery Version 1.11.1 -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
-
-</body>
-
-</html>
+              </html>
