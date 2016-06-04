@@ -36,20 +36,15 @@
     font-size: 12px;
     -webkit-print-color-adjust: exact;
   }
-
-  h6{
-    margin-bottom: 0px;
-    font-weight: 500;
-  }
   li
   {
     font-size:11px;
-    margin-left: -40px;
-    list-style-type:none;
+    margin-left: -25px;
+    list-style-type:disc;;
   }
 
   .exp .row{
-    height: 77px !important;
+    height: 62px;
   }
   .skill-title{
     font-family: Lato;
@@ -58,7 +53,7 @@
   .heading{
     color: #003399;
     font-family: Raleway;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     padding-bottom:10px;
     -webkit-print-color-adjust:exact;
@@ -68,20 +63,23 @@
   }
   .company{
     font-family: Raleway;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
 
   }
   .job-title{
     font-family: Lato;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 14px;
   }
   .place-date{
     font-style: italic;
     font-size: 10px;
+    float: right;
   }
   .details {
-    /*padding-top: 0.2em;*/
+    padding-top: 0.2em;
     font-size: 14px;
     line-height: 1.3em;
     padding-bottom: 0.5em;
@@ -89,13 +87,16 @@
   .main-name{
     margin-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+    margin-left: -30px;
   }
-  .second-column-heading{
-    font-size: 13px;
-    margin-top: 5px;
-    font-weight: bold;
+  .links{
+    float: right;
   }
-
+  .skills li{
+    font-size:12px;
+    margin-left: -40px;
+    list-style-type: none;
+  }
   @media print {
     a,
     a:link:after,
@@ -118,270 +119,181 @@
     <div class="container content">
 
       <div class="row main-name" >
-        <div class="col-sm-9 col-xs-9 col-sm-offset-2 col-xs-offset-2">
-          <h1> &nbsp;&nbsp;&nbsp;&nbsp;Abhijith  <span class="accent-color">Ramalingam </span></h1>
+        <div class="col-xs-7">
+          <h1>Abhijith  <span class="accent-color">Ramalingam </span></h1>
+        </div>
+        <div class="col-xs-offset-2 col-xs-3 links">
+          <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:a2ramali@uwaterloo.ca">a2ramali@uwaterloo.ca </a>
+          <br>
+          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp;&nbsp;<a href="http://www.abhijith.info" > www.abhijith.info </a>
+          <br>
+          <i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://github.com/Abhijith1995" > github.com/Abhijith1995</a>
+          <br>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm-9 col-xs-9" style="padding-right:0px;">
-          <div class="exp">
+        <div class = "exp">
+          <div class="heading">WORK EXPERIENCE</div>
 
-            <div class="heading">
-              WORK EXPERIENCE
+          <div class="row">
+            <div class="col-xs-4 job-title">Distributed Systems Engineer </div>
+            <div class="col-xs-offset-1 col-xs-2 company">Wave Inc.</div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li> Developed and shipped scalable, fault-tolerant backend services for the accounting product with Python, Django, Redis and Message Queues.</li>
+                <li> Gained experience in TDD, Event Sourcing, CQRS and Domain Modelling.</li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-xs-4 job-title">R&amp;D Developer</div>
+            <div class="col-xs-offset-1 col-xs-2 company">IFDS Group</div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">April 2015 - Aug 2015</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li> Wrote features for a dataset reducing engine using Hadoop and Rails.</li>
+                <li> Developed a GUI in Python which uses classification algorithms to authenticate clients based on data streamed from wearables.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-xs-4 job-title">Test Developer</div>
+            <div class="col-xs-offset-1 col-xs-2 company">HubHead Corp</div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2014 - Dec 2014</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li>Increased testing coverage by over 40% by writing end to end and unit tests for a cloud-based data quality product using Angular.js, Protractor and Selenium.</li>
+                <li>Detected regression bugs by running automated test suites on a Jenkins CI server.</li>
+              </div>
             </div>
             <div class="row">
-              <div class="col-xs-3">
-                <span class="job-title">Distributed Systems Engineer </span><br>
-                <span class="company">Wave Accounting</span> <br>
-                <span class="place-date">Toronto, Winter 2016</span>
+              <div class="col-xs-4 job-title">Junior Developer &amp; QA</div>
+              <div class="col-xs-offset-1 col-xs-2 company">Protecode Inc</div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2014 - April 2014</div>
+              <div class="col-xs-12 details">
+                <ul>
+                  <li>Downloaded over 120,000 projects into a MySQL database from websites like Github and SourceForge using web crawlers written in C# </li>
+                  <li>Optimised SQL of a data warehousing C# GUI using SQL joins, reducing project processing time by about 25%.</li>
+                </ul>
               </div>
-              <div class="col-sm-9 col-xs-9 greybackground">
-                <div class ="details">
-                  <ul>
-                    <li> Wrote front end components in ES6, React, Immutable.js and Redux.</li>
-                    <li> Developed and shipped scalable, fault-tolerant backend services for the <br>
-                      accounting product with Python, Django, Redis and Message Queues.</li>
-                      <li> Gained experience in TDD, Event Sourcing, CQRS and Domain Modelling.</li>
+            </div>
+
+            <div class="heading"><br><br>EDUCATION</div>
+            <div class="row">
+              <div class="col-xs-4 job-title">University of Waterloo</div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">Graduating May 2018</div>
+              <div class="col-xs-12 details" >
+                <ul>
+                  <li> BASc in Mechatronics Engineering, Currently Enrolled in 3A, GPA: 84%</li>
+                  <li> <span class="skill-title">Relevant Coursework: </span>Algorithms and Data Structures, Systems and Signals, Real time Operating Systems, Microprocessors and Digital Logic<br> Embedded Microprocessor Systems and Interfacing, Numerical Methods, Statistical Analysis
+                  </div>
+                </div>
+              </div>
+
+            <div class="heading"><br>PROJECTS</div>
+            <div class="row">
+              <div class="col-xs-4 job-title">Developer</div>
+              <div class="col-xs-4 company">Machine Learning Experiments </div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - Present</div>
+              <div class="col-xs-12 details">
+                <ul>
+                  <li> Wrote programs using Python, Numpy, Scikit-learn, Matplotlib and Pandas to perform classification and regression tasks on online datasets.</li>
+                  <li> Developed an understanding of methods like K Nearest Neighbours, SVMs and Neural Networks and their applications in solving real life problems.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row" >
+              <div class="col-xs-4 job-title">Embedded Systems Engineer</div>
+              <div class="col-xs-4 company">Keil Projects </div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2015 - Nov 2015</div>
+              <div class="col-xs-12 details" >
+                <ul>
+                  <li>Wrote a game in C for a Keil microcontroller that simulates bouncing balls on a LCD screen. Used a multi-threaded architecture, semaphore locks and hardware interrupts to interface with peripherals.</li>
+                  <li>Developed a C program to dynamically allocate memory in O(1) time.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 job-title">Hardware Engineer</div>
+              <div class="col-xs-4 company">Path Follower </div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2015 - Nov 2015</div>
+              <div class="col-xs-12 details" >
+                <ul>
+                  <li>Soldered and configured sensors and motors onto a PCB creating a small robot.</li>
+                  <li>Tested sensors using oscilloscope, signal generator and multimeter.</li>
+                  <li>Programmed the robot in C to follow a path using magnetic and light sensors.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 job-title">Data Analyst</div>
+              <div class="col-xs-4 company">Distance Sensor</div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">March 2015</div>
+              <div class="col-xs-12 details" >
+                <ul>
+                  <li> Calibrated an infrared sensor using Arduino and Python to measure distance.</li>
+                  <li> Used machine learning algorithms like Nearest Neighbour Search and Polynomial Regression to reduce measurement uncertainty to 0.15 cm. </li>
+                </ul>
+              </div>
+            </div>
+
+
+              <div class="heading"><br>LANGUAGES AND TECHNOLOGIES</div>
+
+              <div class="details">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <ul class="skills">
+                      <li><span class="skill-title">Languages: </span>Python, JavaScript, Java, C/C++, Ruby, C#</li>
+                      <li><span class="skill-title">Front End: </span>HTML/CSS, jQuery, Bootstrap, React, Redux</li>
+                      <li><span class="skill-title">Back End: </span> Rails, Django , Node.js, Socket.io</li>
+                      <li><span class="skill-title">Database: </span>MySQL, PostgreSQL, MongoDB</li>
                     </ul>
                   </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-3">
-                  <span class="job-title">R&amp;D Developer</span><br>
-                  <span class="company">IFDS Group</span> <br>
-                  <span class="place-date">Toronto, Ontario<br> Spring 2015</span>
-                </div>
-                <div class="col-sm-9 col-xs-9 greybackground">
-                  <div class ="details">
-                    <ul>
-                      <li> Wrote features for a dataset reducing engine using Hadoop and Rails.</li>
-                      <li> Developed a GUI in Python which uses classification algorithms to <br>authenticate clients based on data streamed from wearables.</li>
-                      <li> Built a prototype image viewer with Node.js, Bootstrap and websockets.</li>
+                  <div class="col-xs-6">
+                    <ul class="skills">
+                      <li><span class="skill-title">Data Analysis: </span>R, Matlab, Numpy, Scikit-learn, Pandas</li>
+                      <li><span class="skill-title">Tools: </span>Hadoop, RabbitMQ, Redis</li>
+                      <li><span class="skill-title">Testing: </span>Jasmine, Selenium, unittest, Protractor</li>
+                      <li><span class="skill-title">Embedded/ Hardware: </span>Keil, Arduino, FPGA, PLC</li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="row ">
-                <div class="col-xs-3" >
-                  <span class="job-title">Test Developer</span> <br>
-                  <span class="company">HubHead</span><br>
-                  <span class="place-date">Toronto, Fall 2014</span>
-                </div>
-                <div class=" col-sm-9 col-xs-9 greybackground">
-                  <div class ="details" >
-                    <ul>
 
-                      <li>
-                        Wrote end to end and unit tests for a cloud-based data quality product <br>using Angular.js, Protractor, Karma and Selenium.</li>
-                        <li>Detected bugs by running automated test suites on a Jenkins CI server.
-                        </li>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row ">
-                    <div class="col-xs-3" >
-                      <span class="job-title">Junior Developer</span><br>
-                      <span class="company">Protecode</span><br>
-                      <span class="place-date">Ottawa, Winter 2014</span>
-                    </div>
-                    <div class=" col-sm-9 col-xs-9 greybackground">
-                      <div class ="details" >
-                        <ul>
-                          <li>
-                            Downloaded over 120,000 projects into a MySQL database from<br>
-                            websites like Github and SourceForge by writing web crawlers in C#.
-                            <li>Optimised SQL of a data warehousing GUI, increasing throughput by 25%.
-                            </li>
-                          </div>
-                        </div>
-                      </div>
+            </div>
+            <!-- <div class="heading">COURSEWARE</div>
+            <div class="second-column-heading">Machine Learning</div>
+            <p>Andrew Ng | Coursera</p>
+            <div class="second-column-heading">Computational Investing</div>
+            <p>Tucker Balch | Coursera</p>
+            <div class="second-column-heading">Intro to AI</div>
+            <p> Sebastian Thrun | Udacity</p> -->
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- jQuery Version 1.11.1 -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
-                    </div>
-                    <div class="projects">
+</body>
 
-                      <div class="heading">PROJECTS</div>
-
-                      <div class="row">
-                        <div class="col-sm-3 col-xs-3" >
-                          <span class="job-title">Developer</span><br>
-                          <span class="company">Machine Learning Experiments</span><br>
-                          <span class="place-date">Feb 2016 - Present</span>
-                        </div>
-                        <div class="col-sm-9 col-xs-9 greybackground">
-                          <div class ="details" >
-                            <ul >
-                              <li>
-                                Wrote programs using Python, Numpy, Scikit-learn, Matplotlib and Pandas <br>
-                                to perform classification and regression tasks on online datasets.
-                                <li> Developed an understanding of methods like K Nearest Neighbours, SVMs <br>
-                                  and Neural Networks and their applications in solving real life problems.</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-3 col-xs-3" >
-                              <span class="job-title">Digital Signals Processing </span><br>
-                              <span class="company">Audio Transcriber</span><br>
-                              <span class="place-date">Dec 2015 </span>
-
-                            </div>
-                            <div class="col-sm-9 col-xs-9 greybackground">
-                              <div class ="details" >
-                                <ul >
-                                  <li>
-                                    Removed noise from audio clips using signal filters made in MATLAB.
-                                  </li>
-                                  <li>
-                                    Used frequency analysis to transcribe classical piano pieces into sheet music.
-                                  </li>
-                                  <li>
-                                    Resynthesized audio from transcription and applied statitical<br> analysis techniques  to compare original and resynthesized signal.
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row" >
-                            <div class="col-sm-3 col-xs-3" >
-                              <span class="job-title">Embedded Systems Engineer</span><br>
-                              <span class="company">Keil Projects</span><br>
-                              <span class="place-date">Oct-Nov 2015 </span>
-
-                            </div>
-                            <div class="col-sm-9 col-xs-9 greybackground">
-                              <div class ="details" >
-                                <ul >
-                                  <li>
-                                    Wrote a game in C for a Keil microcontroller that simulates bouncing balls <br>
-                                    on a LCD screen. Used a multi-threaded architecture, semaphore locks and <br>
-                                    hardware interrupts to interface with peripherals.
-                                  </li>
-                                  <li>
-                                    Developed a C program to dynamically allocate memory in O(1) time.
-                                  </li>
-
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-sm-3 col-xs-3" >
-                              <span class="job-title">Hardware Design</span><br>
-                              <span class="company">Path Follower</span><br>
-                              <span class="place-date">Sept-Nov 2015 </span>
-                            </div>
-                            <div class="col-sm-9 col-xs-9 greybackground">
-                              <div class ="details" >
-                                <ul>
-                                  <li>Soldered and configured sensors and motors onto a PCB creating a small robot.</li>
-                                  <li> Tested sensors using oscilloscope, signal generator and multimeter.</li>
-                                  <li> Programmed the robot in C to follow a path using magnetic and light sensors.</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row" >
-                            <div class="col-sm-3 col-xs-3" >
-                              <span class="job-title">Data Analyst</span><br>
-                              <span class="company">Distance Sensor</span><br>
-                              <span class="place-date">March 2015 </span>
-                            </div>
-                            <div class="col-sm-9 col-xs-9 greybackground">
-                              <div class ="details" >
-                                <ul>
-                                  <li> Calibrated an infrared sensor using Arduino and Python to measure distance.</li>
-                                  <li> Used machine learning algorithms like Nearest Neighbour Search and <br>
-                                    Polynomial Regression to reduce measurement uncertainty to 0.15 cm. </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-sm-3 col-xs-3" >
-                                <span class="job-title">Python Developer</span><br>
-                                <span class="company">Market Simulator </span><br>
-                                <span class="place-date">Sept-Dec 2014 </span>
-                              </div>
-                              <div class="col-sm-9 col-xs-9 greybackground">
-                                <div class ="details" >
-                                  <ul>
-                                    <li>
-                                      Developed a program that accepts trade orders for stocks at past dates <br>to
-                                      calculate profit/loss using data from Yahoo Finance API.
-                                    </li>
-                                    <li>Generated trade orders based on stock price volatility using Bollinger bands.</li>
-
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-3">
-                          <div class="heading" >SKILLS</div>
-                          <div class="skills tech">
-                            <p><span class="skill-title">Languages: </span>Python, Java, JavaScript, C/C++, Ruby, C#</p>
-                            <p><span class="skill-title">Web: </span>HTML/CSS, jQuery, React, Rails, Django , Node</p>
-                            <p><span class="skill-title">Data Analysis: </span>R, Matlab, Numpy, Scikit-learn</p>
-                            <p><span class="skill-title">Other: </span>Hadoop, Spark, PostgreSQL, MongoDB, RabbitMQ, Redis</p>
-                            <p><span class="skill-title">Testing: </span>Jasmine, Selenium<p>
-                              <p><span class="skill-title">Embedded: </span>Keil, Arduino</p>
-
-                              <!-- <span></span> -->
-                            </div>
-                            <div style="padding-bottom:72px;"></div>
-                            <div class="heading">LINKS</div>
-                            <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:a2ramali@uwaterloo.ca">a2ramali@uwaterloo.ca </a>
-                            <br>
-                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp;&nbsp;<a href="http://www.abhijith.info" > www.abhijith.info </a>
-                            <br>
-                            <i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://github.com/Abhijith1995" > github.com/Abhijith1995</a>
-                            <br>
-                            <div style="padding-bottom:73px"></div>
-                            <div class="heading">EDUCATION</div>
-                            <div class="second-column-heading">University of Waterloo</div>
-                            <p>
-                              <span style="font-size:10px">3A Mechatronics Engineering<br>
-                                GPA: 84%, Graduating May 2018
-                              </span>
-                            </p>
-                            <div style="padding-bottom:73px"></div>
-                            <div class="heading">COURSEWARE</div>
-                            <div class="second-column-heading">Machine Learning</div>
-                            <p>Andrew Ng | Coursera</p>
-                            <div class="second-column-heading">Computational Investing</div>
-                            <p>Tucker Balch | Coursera</p>
-                            <div class="second-column-heading">Intro to AI</div>
-                            <p> Sebastian Thrun | Udacity</p>
-
-                          </div>
-
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- /.row -->
-
-                  </div>
-                  <!-- /.container -->
-
-                  <!-- jQuery Version 1.11.1 -->
-                  <script src="js/jquery.js"></script>
-
-                  <!-- Bootstrap Core JavaScript -->
-                  <script src="js/bootstrap.min.js"></script>
-                  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
-
-                </body>
-
-                </html>
+</html>
