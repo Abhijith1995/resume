@@ -46,6 +46,9 @@
   .exp .row{
     height: 70px;
   }
+  .exp .row.wave{
+    height: 100px;
+  }
   .skill-title{
     font-family: Lato;
     font-weight: 700;
@@ -149,16 +152,15 @@
         <div class = "exp">
           <div class="heading">WORK EXPERIENCE</div>
 
-          <div class="row">
+          <div class="row wave">
             <div class="col-xs-8"><span class="job-title">Distributed Systems Engineer</span> | <span class="company">Wave Inc</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
             <div class="col-xs-12 details">
               <ul>
-                <li> Developed and shipped scalable, fault-tolerant backend services for the accounting product with Python, Django, Redis and Message Queues.</li>
-                <li> Gained experience in TDD, Event Sourcing, CQRS and Domain Modelling.</li>
-                <li> Gained experience in TDD, Event Sourcing, CQRS and Domain Modelling.</li>
-                <li> Gained experience in TDD, Event Sourcing, CQRS and Domain Modelling.</li>
-
+                <li> Used asynchrous messaging queues, database sharding, worker machines and caching to distribute load and perform large computations in the background,
+                  <br>leading to over 90% reduction in report generation time.</li>
+                <li> Developed and shipped scalable, fault-tolerant backend services for the accounting product which is used by 1.7 million customers with Python, Django and Redis.</li>
+                <li> Stored each database change as an event (Event Sourcing) which led to improvements in system auditability and accuracy. </li>
               </ul>
             </div>
 
