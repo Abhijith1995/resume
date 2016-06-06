@@ -163,7 +163,7 @@
               <li> Developed and shipped scalable, fault-tolerant backend services writen in Python and Django for the accounting product which is used by over 1.7 million users.</li>
               <li> Used messaging queues, database sharding, worker machines and denormalization to distribute load and perform large computations <br>
                 asynchronously in the background, leading to more than 90% reduction in time required to generate unique financial reports for each user.</li>
-                <li> Stored each change in application state as a separate queryable event in the database (Event Sourcing) resulting in increases in system auditability and accuracy.</li>
+                <li> Stored each database change as a sequence of immutable queryable events(Event Sourcing), resulting in improved concurrency control, auditability and accuracy.</li>
               </ul>
             </div>
 
