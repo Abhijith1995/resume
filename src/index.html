@@ -51,7 +51,7 @@
     font-family: Raleway;
     font-size: 14px;
     font-weight: 300;
-    padding-bottom:10px;
+    padding-bottom:7px;
     -webkit-print-color-adjust:exact;
   }
   .accent-color{
@@ -82,14 +82,22 @@
     font-size: 14px;
     line-height: 1.3em;
   }
+  .skill-details {
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-top: -6px;
+  }
+
   .project-details {
-    padding-top: 0.2em;
+    padding-top: 0.15em;
     font-size: 14px;
     line-height: 1.2em;
-    padding-bottom: 0.5em;
   }
   .project-details li{
-    padding-bottom: 0.4em;
+    padding-bottom: 0.6em;
+  }
+  .project-details li:last-child{
+    padding-bottom: 0.2em;
   }
 
   .tech{
@@ -132,29 +140,30 @@
       <div class="row main-name" >
         <div class="col-xs-7">
           <h1>Abhijith  <span class="accent-color">Ramalingam </span></h1>
+          <a href="http://www.abhijith.info"> www.abhijith.info </a>
         </div>
         <div class="col-xs-offset-2 col-xs-3 links">
           <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:a2ramali@uwaterloo.ca">a2ramali@uwaterloo.ca </a>
           <br>
-          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp;&nbsp;<a href="http://www.abhijith.info" > www.abhijith.info </a>
-          <br>
           <i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://github.com/Abhijith1995" > github.com/Abhijith1995</a>
           <br>
+          <i class="fa fa-linkedin"></i>&nbsp;&nbsp;<a href="http://lnkdin.me/p/arama" > lnkdin.me/p/arama</a>
+
         </div>
       </div>
 
       <div class="row">
-        <div class="heading">WORK EXPERIENCE</div>
+        <div style="margin-top:-5px;"class="heading">WORK EXPERIENCE</div>
 
         <div class="row">
           <div class="col-xs-8"><span class="job-title">Distributed Systems Engineer</span> | <span class="company">Wave Inc</span>  </div>
           <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
           <div class="col-xs-12 details">
             <ul>
-              <li> Developed and shipped scalable, fault-tolerant backend services for the accounting product which is used by over 1.7 million users with Python and Django.</li>
+              <li> Developed and shipped scalable, fault-tolerant backend services writen in Python and Django for the accounting product which is used by over 1.7 million users.</li>
               <li> Used messaging queues, database sharding, worker machines and denormalization to distribute load and perform large computations <br>
                 asynchronously in the background, leading to more than 90% reduction in time required to generate unique financial reports for each user.</li>
-                <li> Stored each database change separately as a queryable event (Event Sourcing) which led to improvements in system auditability and accuracy.</li>
+                <li> Stored each change in application state as a separate queryable event in the database (Event Sourcing) resulting in increases in system auditability and accuracy.</li>
               </ul>
             </div>
 
@@ -164,9 +173,9 @@
             <div class="col-xs-offset-2 col-xs-2 place-date">April 2015 - Aug 2015</div>
             <div class="col-xs-12 details">
               <ul>
-                <li> Worked within applied analytics to add features, bug fixes and improvements to a big data engine which reduced large datasets by upto 20% by applying transformation rules using Hadoop, Node.js, Redis, Websockets and Rails.</li>
-                <li> Developed a C++ and Python GUI that uses Numpy, Scikit-learn and Matplotlib to create neural-netowrk based classifiers to authenticate users <br>
-                  in real time based on their ECG (Electrocardiogram) which was acquired using data streamed via bluetooth from a wearable band (Nymi).</li>
+                <li> Worked within applied analytics to add features, bug fixes and improvements to a big data engine which reduced large datasets by up to 20% by applying transformation rules using Hadoop, Node.js, Redis, Websockets and Rails.</li>
+                <li> Developed a C++ and Python GUI that uses Numpy, Scikit-learn and Matplotlib to create neural-network based classifiers to authenticate users <br>
+                  in real time based on their ECG (Electrocardiogram) which was acquired using data streamed via Bluetooth from a wearable band (Nymi).</li>
                 </ul>
               </div>
             </div>
@@ -185,60 +194,14 @@
                 <div class="col-xs-12 details">
                   <ul>
                     <li>Optimised SQL of a data warehousing GUI written in C# and PostgreSQL using SQL joins, reducing project processing time by about 25%.</li>
-                    <li>Downloaded over 120,000 projects into a MySQL database from websites like Github and SourceForge using web crawlers written in C# </li>
+                    <li>Developed web crawlers in C# to download over 120,000 projects into a MySQL database from websites like Github and SourceForge.</li>
                   </ul>
                 </div>
               </div>
-
-              <div style="padding-bottom:3px;" class="heading">PROJECTS</div>
-              <div class="row">
-                <div class="col-xs-12 project-details">
-                  <ul>
-                    <li><span class="project-title">Machine Learning Experiments : </span>
-                      (Jan 2016 - Present) Wrote scripts to perform classification and regression tasks on online datasets using methods like SVMs and Neural Networks.
-                      <span class="tech">Tech Used: Python, Numpy, Scikit-learn, Matplotlib and Pandas</span>
-                    </li>
-                    <li>
-                      <span class="project-title">Bouncing Ball Game : </span>
-                      (Nov 2015) Wrote a game that simulates bouncing balls on the LCD screen of a microcontroller which was implemented using a multi-threaded architecture, semaphore locks and hardware interrupts to interface with peripherals.
-                      <span class="tech">Tech Used: C, Keil Microcontroller</span>
-                    </li>
-                    <li>
-                      <span class="project-title">Half Fit Memory Allocator : </span>
-                      (Oct 2015) Developed a program to allocate and deallocate memory in O(1) time.
-                      <span class="tech">Tech Used: C, Keil Microcontroller</span>
-                    </li>
-                    <li>
-                      <span class="project-title">Path Follower : </span>
-                      (Sept-Nov 2015) Soldered and configured sensors and motors onto a PCB creating a small robot. Tested sensors using oscilloscope, signal generator and multimeter.Programmed the robot in C to follow a path using magnetic and light sensors.
-                    </li>
-                    <li>
-                      <span class="project-title">Crib : </span>
-                      (June 2015) Built in 24 hrs during AngelHack Toronto, Crib is a web-based chat app with a real time editable poll for users to discuss
-                      <br> and decide on choices specified in the poll along with their friends.
-                      <span class="tech">Tech Used: Ruby on Rails, Websockets</span>
-                    </li>
-
-                    <li>
-                      <span class="project-title">Makeshift Calliper : </span>
-                      (March 2015) Calibrated the readings from an infrared sensor using a microcontroller to measure small distances. Used machine learning algorithms like Nearest Neighbour Search and Polynomial Regression to reduce measurement uncertainty to 0.15 cm.
-                      <span class="tech">Tech Used: Python, Numpy,  Arduino</span>
-                    </li>
-                    <li>
-                      <span class="project-title">Market Simulator : </span>
-                      (Oct 2014 - Nov 2014) Developed a program that accepts trade orders for stocks at past dates to calculate profit using data from Yahoo Finance API.
-                      Implemented investment strategies like Bollinger Bands which look for fluctuations in stock prices to generate trade orders.
-                      <span class="tech">Tech Used: Python, Numpy,  Pandas, Scikit- Learn</span>
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-
 
               <div  class="heading">TECHNICAL SKILLS</div>
 
-              <div class="details">
+              <div class="skill-details">
                 <div class="row">
                   <div class="col-xs-6">
                     <ul class="skills">
@@ -251,11 +214,60 @@
                   <div class="col-xs-6">
                     <ul class="skills">
                       <li><span class="skill-title">Data Analysis: </span>R, Matlab, Numpy, Scikit-learn, Pandas, Matplotlib</li>
-                      <li><span class="skill-title">Tools: </span>Hadoop, RabbitMQ, Redis</li>
+                      <li><span class="skill-title">Tools: </span>Hadoop, RabbitMQ, Redis, Git</li>
                       <li><span class="skill-title">Testing: </span>Jasmine, Selenium, unittest, Protractor</li>
-                      <li><span class="skill-title">Embedded: </span>Keil, Arduino, FPGA, PLC</li>
+                      <li><span class="skill-title">Embedded: </span>ARM-Keil Development Board, Arduino, FPGA, PLC</li>
                     </ul>
                   </div>
+                </div>
+              </div>
+
+              <div style="padding-bottom:3px;" class="heading">PROJECTS</div>
+              <div class="row">
+                <div class="col-xs-12 project-details">
+                  <ul>
+                    <li><span class="project-title">Machine Learning Experiments : </span>
+                      (Jan 2016 ) Built a binary SVM classifier to predict the nature of a tumor based on open data <br>
+                      gathered from an online breast cancer dataset.
+                      <span class="tech">Tech Used: Python, Numpy,  Pandas, Scikit- Learn</span>
+
+                    </li>
+                    <li>
+                      <span class="project-title">Bouncing Ball Game : </span>
+                      (Nov 2015) Wrote a game that simulates bouncing balls on the LCD screen of a microcontroller which was implemented using <br>
+                       a multi-threaded architecture, semaphore locks and hardware interrupts to interface with peripherals.
+                      <span class="tech">Tech Used: C, ARM-Keil Development Board</span>
+                    </li>
+                    <li>
+                      <span class="project-title">Half Fit Memory Allocator : </span>
+                      (Oct 2015) Developed a program to allocate and de-allocate memory in O(1) time.
+                      <span class="tech">Tech Used: C, ARM-Keil Development Board</span>
+                    </li>
+                    <li>
+                      <span class="project-title">Path Follower : </span>
+                      (Sept-Nov 2015) Soldered and configured sensors and motors onto a PCB creating a small robot.
+                      Tested sensors using oscilloscope, signal generator and multimeter.
+                      Programmed the robot in C to follow a path using magnetic and light sensors.
+                    </li>
+                    <li>
+                      <span class="project-title">Crib : </span>
+                      (June 2015) Built in 24 hrs during AngelHack Toronto, Crib is a Ruby on Rails chat app with a real time editable poll for users to discuss options.
+                    </li>
+
+                    <li>
+                      <span class="project-title">Makeshift Caliper : </span>
+                      (March 2015) Calibrated the readings from an infrared sensor using a microcontroller to measure small distances.
+                       Used machine learning algorithms like Nearest Neighbor Search and Polynomial Regression to reduce measurement uncertainty to 0.15 cm.
+                      <span class="tech">Tech Used: Python, Numpy,  Arduino</span>
+                    </li>
+                    <li>
+                      <span class="project-title">Market Simulator : </span>
+                      (Oct 2014 - Nov 2014) Developed a program that accepts trade orders for stocks at past dates to calculate profit using data from Yahoo Finance API.
+                      Used Bollinger Bands, a stock price volatility indicator to generate trade orders.
+                      <span class="tech">Tech Used: Python, Numpy,  Pandas</span>
+                    </li>
+
+                  </ul>
                 </div>
               </div>
 
