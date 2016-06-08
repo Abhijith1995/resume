@@ -76,14 +76,19 @@
   .place-date{
     font-style: italic;
     font-size: 10px;
-    float: right;
+    /*float: right;*/
   }
   .details {
+    padding-top: 0.15em;
     font-size: 14px;
-    line-height: 1.3em;
+    line-height: 1.1em;
   }
+  .details li{
+    padding-bottom: 0.5em;
+  }
+
   .skill-details {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.4em;
     margin-top: -6px;
   }
@@ -160,10 +165,10 @@
           <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
           <div class="col-xs-12 details">
             <ul>
-              <li> Developed and shipped scalable, fault-tolerant backend services writen in Python and Django for the accounting product which is used by over 1.7 million users.</li>
+              <li> Developed and shipped scalable, fault-tolerant backend services writen in Python and Django for the accounting product that is used by 1.7 million users.</li>
               <li> Used messaging queues, database sharding, worker machines and denormalization to distribute load and perform large computations <br>
                 asynchronously in the background, leading to more than 90% reduction in time required to generate unique financial reports for each user.</li>
-                <li> Stored each database change as a sequence of immutable queryable events(Event Sourcing), resulting in improved concurrency control, auditability and accuracy.</li>
+                <li> Stored each database change as a sequence of immutable queryable events(Event Sourcing), resulting in improved concurrency control and auditability.</li>
               </ul>
             </div>
 
@@ -184,7 +189,7 @@
               <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2014 - Dec 2014</div>
               <div class="col-xs-12 details">
                 <ul>
-                  <li>Increased testing coverage by over 40% by writing end to end and unit tests for a cloud-based data quality product using Angular.js, Protractor and Selenium.</li>
+                  <li>Wrote end to end and unit tests for a cloud-based data quality product using Angular.js, Protractor and Selenium, increasing test coverage by 40%.</li>
                   <li>Detected regression bugs by running automated test suites on a Jenkins CI server.</li>
                 </div>
               </div>
@@ -235,12 +240,12 @@
                     <li>
                       <span class="project-title">Bouncing Ball Game : </span>
                       (Nov 2015) Wrote a game that simulates bouncing balls on the LCD screen of a microcontroller which was implemented using <br>
-                       a multi-threaded architecture, semaphore locks and hardware interrupts to interface with peripherals.
+                      a multi-threaded architecture, semaphore locks and hardware interrupts to interface with peripherals.
                       <span class="tech">Tech Used: C, ARM-Keil Development Board</span>
                     </li>
                     <li>
                       <span class="project-title">Half Fit Memory Allocator : </span>
-                      (Oct 2015) Developed a program to allocate and de-allocate memory in O(1) time.
+                      (Oct 2015) Wrote a program to allocate and de-allocate memory in O(1) time.
                       <span class="tech">Tech Used: C, ARM-Keil Development Board</span>
                     </li>
                     <li>
@@ -256,8 +261,8 @@
 
                     <li>
                       <span class="project-title">Makeshift Caliper : </span>
-                      (March 2015) Calibrated the readings from an infrared sensor using a microcontroller to measure small distances.
-                       Used machine learning algorithms like Nearest Neighbor Search and Polynomial Regression to reduce measurement uncertainty to 0.15 cm.
+                      (March 2015) Calibrated readings from an infrared sensor using a microcontroller to measure small distances.
+                      Used machine learning algorithms (Nearest Neighbor Search, Polynomial Regression) to reduce measurement uncertainty to 0.15 cm.
                       <span class="tech">Tech Used: Python, Numpy,  Arduino</span>
                     </li>
                     <li>
@@ -274,7 +279,7 @@
               <div style="margin-bottom: -5px;"class="heading">EDUCATION</div>
               <div class="row">
                 <div class="col-xs-4 job-title">University of Waterloo</div>
-                <div class="col-xs-offset-2 col-xs-2 place-date">Graduating May 2018</div>
+                <div class="col-xs-offset-6 col-xs-2 place-date">Graduating May 2018</div>
                 <div class="col-xs-12 details" >
                   <ul>
                     <li> BASc in Mechatronics Engineering, Currently Enrolled in 3A, GPA: 3.7 </li>
@@ -287,28 +292,37 @@
                   <div class="col-xs-4 job-title">Online Coursework</div>
                   <div class="col-xs-12 details" >
                     <ul>
-                      <div class="col-xs-offset-2 col-xs-2 place-date">Oct 2014 - Jan 2015</div>
-                      <li>  <span class="skill-title">Machine Learning </span> |  Coursera </li>
-                      <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2014- Nov 2014</div>
-                      <li>  <span class="skill-title">Computational Investing </span> |  Coursera</li>
-                      <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2014 - Oct 2014</div>
-                      <li>  <span class="skill-title">R Programming </span> |  Coursera</li>
+                      <div class="row">
+                        <div class ="col-xs-4">
+                          <li>  <span class="skill-title">Machine Learning </span> |  Coursera </li>
+                        </div>
+                        <div class="col-xs-offset-6 col-xs-2 place-date">Oct 2014 - Jan 2015</div>
+                      </div>
+                      <div class="row">
+                        <div class ="col-xs-4">
+                          <li>  <span class="skill-title">Computational Investing </span> |  Coursera </li>
+                        </div>
+                        <div class="col-xs-offset-6 col-xs-2 place-date">Sept 2014-Nov 2014</div>
+                      </div>
+                      <!-- <div class="row">
+                        <div class ="col-xs-4">
+                          <li>  <span class="skill-title">R Programming </span> |  Coursera </li>
+                        </div>
+                        <div class="col-xs-offset-6 col-xs-2 place-date">Sept 2014-Oct 2014</div> -->
+
+                      <!-- <div class="col-xs-offset-1 col-xs-2 ></div> -->
+                      <!-- <div class="col-xs-offset-10 col-xs-2 place-date">Oct 2014 - Jan 2015</div> -->
+
+                      <!-- <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2014 - Oct 2014</div> -->
+                      <!-- <li>  <span class="skill-title">R Programming </span> |  Coursera</li>
                       <div class="col-xs-offset-2 col-xs-2 place-date">Oct 2014 - Nov 2014</div>
-                      <li>  <span class="skill-title">Exploratory Data Analysis </span> |  Coursera</li>
+                      <li>  <span class="skill-title">Exploratory Data Analysis </span> |  Coursera</li> -->
 
                     </ul>
                   </div>
                 </div>
 
               </div>
-              <!-- <div class="heading">COURSEWARE</div>
-              <div class="second-column-heading">Machine Learning</div>
-              <p>Andrew Ng | Coursera</p>
-              <div class="second-column-heading">Computational Investing</div>
-              <p>Tucker Balch | Coursera</p>
-              <div class="second-column-heading">Intro to AI</div>
-              <p> Sebastian Thrun | Udacity</p> -->
-
             </div>
 
           </div>
