@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700' rel='stylesheet' type='text/css'>
+
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>tesla_resume</title>
+  <!-- Custom CSS -->
+  <style>
+
+  h1 {
+    font-family: Ubuntu;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 20px;
+  }
+  body{
+    font-family: Lato;
+    font-size: 11px;
+    -webkit-print-color-adjust: exact;
+  }
+  li
+  {
+    font-size:11px;
+    margin-left: -25px;
+    list-style-type:disc;;
+  }
+  .main-name{
+    margin-bottom: 8px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .skill-title{
+    font-weight: 700;
+  }
+  .heading{
+    color: #003399;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom:1px;
+    -webkit-print-color-adjust:exact;
+  }
+  .accent-color{
+    color: #003399
+  }
+  .work-exp .row{
+    margin-bottom: 5px;
+  }
+  .job-title{
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .company{
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+  }
+  .place-date{
+    font-family: Lato;
+    font-style: italic;
+    font-size: 9px;
+    margin-top: 7px;
+  }
+  .details li{
+    padding-bottom: 5px;
+    line-height: 120%;
+  }
+  .details ul {
+    margin-bottom: 4px;
+  }
+  .skill-details {
+    margin-top: -2px;
+  }
+  .skill-details li {
+    margin-left: -40px;
+    list-style-type: none;
+    line-height: 180%;
+  }
+  .project-title{
+    font-family: Lato;
+    font-weight: 700;
+  }
+  .project-details {
+    line-height: 130%;
+  }
+  .project-details li{
+    padding-bottom: 10px;
+    margin-left: -40px;
+    list-style-type: none;
+  }
+  .project-details li:last-child{
+    margin-bottom: -7px;
+    margin-left: -40px;
+    list-style-type: none;
+  }
+  .tech{
+    font-style: italic;
+  }
+  @media print {
+    a,
+    a:link:after,
+    a:visited:after {
+      content: "" !important;
+      },
+    }
+    @media print {
+      .heading,.accent-color {
+        content: "" !important;
+        color: #003399 !important;
+
+      }
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container content">
+      <div class="row">
+
+        <div class="row main-name" >
+          <div class="col-xs-7">
+            <h1>Abhijith  <span class="accent-color">Ramalingam </span></h1>
+            <a href="http://www.abhijith.info"> www.abhijith.info </a>
+          </div>
+          <div class="col-xs-offset-2 col-xs-3 links">
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:a2ramali@uwaterloo.ca">a2ramali@uwaterloo.ca </a>
+            <br>
+            <i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://github.com/Abhijith1995" > github.com/Abhijith1995</a>
+            <br>
+            <i class="fa fa-linkedin"></i>&nbsp;&nbsp;<a href="http://lnkdin.me/aramalingam" > lnkdin.me/aramalingam</a>
+
+          </div>
+        </div>
+        <div class="heading">PROJECTS</div>
+        <div class="row">
+          <div class="col-xs-12 project-details">
+            <ul>
+              <!-- <li><span class="project-title">Machine Learning Experiments : </span>
+                (Jan 2016 ) Built a binary SVM classifier to predict the nature of a tumor based on open data gathered from an
+                <br>online breast cancer dataset.
+                <span class="tech">Tech Used: Python, Numpy,  Pandas, Scikit- Learn</span>
+
+              </li>
+              <li>
+                <span class="project-title">Audio Transcription : </span>
+                (Dec 2015) Used frequency analysis to transcribe classical piano pieces into sheet music. Resynthesized audio from
+                transcription <br> and then applied statistical analysis techniques to compare original and resynthesized audio signal.
+                <span class="tech">Tech Used: MATLAB</span>
+              </li> -->
+              <li>
+                <span class="project-title">MP3 Player : </span>
+                (June 2016) Designed a microcontroller system which plays .wav files from an SD card. Implemented device drivers to read data from an SD card, read information from a FAT file system and to send audio data through an audio CODEC for playback.
+                <span class="tech">Tech Used: C, Altera DE-2 Development Board</span>
+              </li>
+              <li>
+                <span class="project-title">Non Pneumatic Tire: </span>
+                (Nov 2015) Designed a non pneumatic tire using SolidWorks and used ANSYS AIM to conduct a Finite Element Analysis of the tire in order to model its deformations and stresses under different loading conditions and terrains.
+              </li>
+              <li>
+                <span class="project-title">Bouncing Ball Game : </span>
+                (Nov 2015) Wrote a game that simulates bouncing balls on the LCD screen of a microcontroller which was implemented using <br>
+                the Keil-RTOS's multi-threading libraries, semaphore locks and hardware interrupts to interface with peripherals.
+                <span class="tech">Tech Used: C, ARM-Keil Development Board</span>
+              </li>
+
+              <li>
+                <span class="project-title">Half Fit Memory Allocator : </span>
+                (Oct 2015) Wrote a program to allocate and de-allocate memory in O(1) time.
+                <span class="tech">Tech Used: C, ARM-Keil Development Board</span>
+              </li>
+              <li>
+                <span class="project-title">Path Follower : </span>
+                (Sept-Nov 2015) Soldered and configured light, magnetic and temperature sensors and motors onto a PCB to create a small robot.
+                Tested sensors using oscilloscope, signal generator and multimeter.
+                Programmed the robot in C to follow a path using magnetic and light sensors.
+              </li>
+              <!-- <li>
+                <span class="project-title">Crib : </span>
+                (June 2015) Built in 24 hrs during AngelHack Toronto, Crib is a Ruby on Rails chat app with a real time editable poll for users to discuss options.
+              </li> -->
+
+              <li>
+                <span class="project-title">Makeshift Calliper  : </span>
+                (March 2015) Calibrated readings from an infrared sensor using a microcontroller to measure small distances.
+                Used machine learning algorithms (Nearest Neighbor Search, Polynomial Regression) to reduce measurement uncertainty to 0.15 cm.
+                <span class="tech">Tech Used: Python, Numpy,  Arduino</span>
+              </li>
+              <li>
+                <span class="project-title">Autonomous Robotic Turret : </span>
+                (Nov 2013) Constructed a turret using LEGO Mindstorms and C which detects targets within the robot's vicinity using an ultrasonic sensor and automatically shoots small LEGO blocks at said targets.
+              <li>
+                <span class="project-title">Braillestorm : </span>
+                (July 2013) Led a team of three in the design, construction and programming of a braille printer using LEGO Mindstorms and C.
+              </li>
+
+              <!-- <li>
+                <span class="project-title">Market Simulator : </span>
+                (Oct 2014 - Nov 2014) Developed a program that accepts trade orders for stocks at past dates to calculate profit using data from Yahoo Finance API.
+                Used Bollinger Bands, a stock price volatility indicator to generate trade orders.
+                <span class="tech">Tech Used: Python, Numpy,  Pandas</span>
+              </li> -->
+
+            </ul>
+          </div>
+        </div>
+
+
+
+
+          <div class="heading">WORK EXPERIENCE</div>
+          <div class="work-exp">
+            <div class="row">
+              <div class="col-xs-8"><span class="job-title">Distributed Systems Engineer</span> | <span class="company">Wave Inc</span>  </div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
+              <div class="col-xs-12 details">
+                <ul>
+                  <li>Developed and shipped scalable, fault-tolerant backend services written in Python and Django for the accounting product that has 1.7 million users.</li>
+                  <li>Used messaging queues, database sharding, worker machines and denormalization to distribute load and perform heavy computations asynchronously <br>
+                    in the background, leading to more than 90% reduction in time required to generate unique financial reports for each user.
+                  </li>
+                  <li>Stored each database change as a sequence of immutable queryable events (Event Sourcing), resulting in improved concurrency control and auditability.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-8"><span class="job-title">R&amp;D Developer</span> | <span class="company"> DST Systems</span>  </div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">April 2015 - Aug 2015</div>
+              <div class="col-xs-12 details">
+                <ul>
+                  <li> Worked with the applied analytics division to add features, improvements and bug fixes to a big data engine which used transformation rules to clean, reduce and prepare
+                    large datasets for analytics using Hadoop, Node.js, Redis, Rails, PostgreSQL and ActiveMQ.
+                  </li>
+                  <li> Developed a C++ and Python GUI that uses machine learning algorithms and relevant libraries (Numpy, Matlplotlib, Scikit-learn)  to authenticate users <br>
+                    in real time based on their ECG (Electrocardiogram) which was acquired using data streamed via Bluetooth from a wearable device (Nymi band).
+                  </li>
+                  <li>Built an image viewer with Node.js and Bootstrap that interfaced with eye tracking hardware to monitor user performance and generate live heatmaps.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-8"><span class="job-title">Test Developer</span> | <span class="company">HubHead Corp</span>  </div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2014 - Dec 2014</div>
+              <div class="col-xs-12 details">
+                <ul>
+                  <li>Wrote end to end and unit tests for a cloud-based data quality product using Angular.js, Protractor and Selenium, increasing test coverage by 40%.</li>
+                  <li>Detected and documented software bugs, by managing the automated testing infrastructure running on a Continuous Integration server (Jenkins).</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-8"><span class="job-title">Junior Developer &amp; QA</span> | <span class="company">Protecode Inc</span>  </div>
+              <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2014 - April 2014</div>
+              <div class="col-xs-12 details">
+                <ul>
+                  <li>Optimised SQL of a data warehousing GUI written in C# and PostgreSQL using SQL joins, reducing project processing time by about 25%.</li>
+                  <li>Developed web crawlers in C# to download over 120,000 open source projects into a MySQL database from websites like Github and SourceForge.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div  class="heading">TECHNICAL SKILLS</div>
+
+          <div class="row skill-details">
+            <div class="col-xs-6">
+              <ul>
+                <li><span class="skill-title">Languages: </span>Python, C/C++, JavaScript, Java, Ruby, C#</li>
+                <!-- <li><span class="skill-title">Front End: </span>HTML/CSS, jQuery, Bootstrap, React, Redux</li> -->
+                <li><span class="skill-title">CAD and Simulation : </span> AutoCAD, SolidWorks , ANSYS AIM</li>
+                <li><span class="skill-title">Embedded: </span>ARM-Keil Board, Arduino, Altera DE-2  Board</li>
+                <li><span class="skill-title">Data Analysis: </span>R, MATLAB, Numpy, Scikit-learn, Pandas, Matplotlib</li>
+              </ul>
+            </div>
+            <div class="col-xs-6">
+              <ul>
+                <li><span class="skill-title">Back End: </span>Rails, Django , Node.js, Socket.io, Express</li>
+                <li><span class="skill-title">Database: </span>MySQL, PostgreSQL, MongoDB</li>
+                <li><span class="skill-title">Other/Tools: </span>Hadoop, RabbitMQ, Redis, Git</li>
+                <li><span class="skill-title">Testing: </span>Jasmine, Selenium, unittest, Protractor</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="heading">EDUCATION</div>
+          <div class="row">
+            <div class="col-xs-4 job-title">University of Waterloo</div>
+            <div class="col-xs-offset-6 col-xs-2 place-date">Sept 2013 - Present</div>
+            <div class="col-xs-12 details" >
+              <ul>
+                <li> BASc in Mechatronics Engineering, Class of 2018. Currently Enrolled in 3A. GPA: 3.7 </li>
+                <li> <span class="skill-title">Relevant Coursework: </span> Algorithms and Data Structures,  Real time Operating Systems, Embedded Microprocessor Systems and Interfacing (ongoing)
+                  <br> Digital Logic, Systems and Signals, Numerical Methods, Statistical Analysis
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4 job-title">Online Coursework</div>
+              <div class="col-xs-12 details" >
+                <ul>
+                  <li>  <span class="skill-title">Machine Learning </span> |  Coursera </li>
+                  <li>  <span class="skill-title">Computational Investing </span> |  Coursera </li>
+                  <li>  <span class="skill-title">R Programming </span> |  Coursera </li>
+                </ul>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+</div>
+<!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery Version 1.11.1 -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+
+</html>
