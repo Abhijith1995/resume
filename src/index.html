@@ -64,13 +64,13 @@
   }
   .job-title{
     font-family: Raleway;
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 500;
+    font-size: 20px;
   }
   .company{
     font-family: Raleway;
     font-weight: 300;
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
   }
   .place-date{
@@ -164,7 +164,19 @@
         <div class="heading">WORK EXPERIENCE</div>
         <div class="work-exp">
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">Data Scientist</span> | <span class="company">Capital One</span>  </div>
+            <div class="col-xs-8"><span class="job-title">Software Engingeering Intern</span> | <span class="company">A9.com (An Amazon Subsidiary)</span>  </div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">May 2017 - Aug 2017</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li>Worked on the core infrastructure of the Advertising Data Platform team, Amazon's largest data platform that stores and processes all raw logs from the Amazon Ad Exchange. The team handles tens of petabytes of data on a monthly basis, that is stored across globally distributed Hadoop clusters.</li>
+                <li>Changed Hadoop source code to interface with internal Amazon tools and AWS KMS, enabling Hadoop tools like Hive, Spark and MapReduce to read encrypted data stored in S3 in a distributed manner. This can result in storage cost savings of up to 75% by switching to S3 from HDFS.</li>
+                <li>Modifed the team's infrastructure to enable running Hive queries on encrypted data stored in S3. Performed benchmark tests with Hive, querying hundreds of terabytes of data in order to compare performance tradeoffs at scale between HDFS and S3.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-8"><span class="job-title">Software Development Intern</span> | <span class="company">Capital One</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2016 - Dec 2016</div>
             <div class="col-xs-12 details">
               <ul>
@@ -175,7 +187,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">Distributed Systems Engineer</span> | <span class="company">Wave</span>  </div>
+            <div class="col-xs-8"><span class="job-title">Distributed Systems Engineering Intern</span> | <span class="company">Wave</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
             <div class="col-xs-12 details">
               <ul>
@@ -188,12 +200,12 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">R&amp;D Developer</span> | <span class="company"> DST Systems</span>  </div>
+            <div class="col-xs-8"><span class="job-title">R&amp;D Intern</span> | <span class="company"> DST Systems</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">May 2015 - Aug 2015</div>
             <div class="col-xs-12 details">
               <ul>
                 <li>Worked with the applied analytics division to add features, improvements and bug fixes to a big data engine which used transformation rules to clean, reduce and prepare
-                  large datasets for analytics using Hadoop, Node.js, Redis, Rails, PostgreSQL, and ActiveMQ.
+                  large datasets for analytics using Hadoop, Node.js, Redis, Rails and PostgreSQL.
                 </li>
                 <li> Developed a C++ and Python GUI that uses machine learning algorithms and relevant libraries (Numpy, Matlplotlib, Scikit-learn)  to authenticate users <br>
                   in real time based on their ECG (Electrocardiogram) which was acquired using data streamed via Bluetooth from a wearable device (Nymi band).
@@ -237,7 +249,7 @@
           <div class="col-xs-6" style="margin-left:-20px">
             <ul>
               <li><span class="skill-title">Data Analysis: </span>MATLAB, Numpy, Scikit-learn, Pandas, Matplotlib</li>
-              <li><span class="skill-title">Tools: </span>Hadoop, Docker, AWS, Terraform, Git, Chef</li>
+              <li><span class="skill-title">Tools: </span>Docker, Terraform, Hadoop, Hive, Spark</li>
               <li><span class="skill-title">Database: </span>MySQL, PostgreSQL, MongoDB, Redis</li>
             </ul>
           </div>
@@ -275,18 +287,18 @@
                 a multi-threaded architecture, semaphore locks and hardware interrupts to interface with peripherals.
                 <span class="tech">Tech Used: C, ARM-Keil Development Board</span>
               </li>
-              <li>
+              <!-- <li>
                 <span class="project-title">Path Follower : </span>
                 (Sept-Nov 2015) Soldered and configured sensors and motors onto a PCB creating a small robot.
                 Tested sensors using an oscilloscope, <br>signal generator and multimeter.
                 Programmed the robot in C to follow a path using magnetic and light sensors.
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
                 <span class="project-title">Makeshift Caliper  : </span>
                 (March 2015) Calibrated readings from an infrared sensor using a microcontroller to measure small distances.
                 Used machine learning algorithms (Nearest Neighbor Search, Polynomial Regression) to reduce measurement uncertainty to 0.15 cm.
                 <span class="tech">Tech Used: Python, Numpy,  Arduino</span>
-              </li>
+              </li> -->
               <!-- <li>
                 <span class="project-title">Market Simulator : </span>
                 (Oct 2014 - Nov 2014) Developed a program that accepts trade orders for stocks at past dates to calculate profit using data from Yahoo Finance API.
@@ -304,38 +316,34 @@
           <div class="col-xs-offset-6 col-xs-2 place-date">Sept 2013 - Present</div>
           <div class="col-xs-12 details" >
             <ul>
-              <li> BASc in Mechatronics Engineering, Class of 2018. Currently Enrolled in 3B. Cumalative GPA: 3.5/4</li>
+              <li> BASc in Mechatronics Engineering, Class of 2018. Currently Enrolled in 4A. Cumalative GPA: 3.5/4</li>
               <li> <span class="skill-title">Relevant Coursework: </span> Algorithms and Data Structures,  Real time Operating Systems, Embedded Microprocessor Systems and Interfacing
-                <br> Digital Logic, Systems and Signals, Numerical Methods, Experimental Design and Statistical Analysis
+                <br>Systems and Signals, Numerical Methods, Experimental Design and Statistical Analysis, Control Systems, Autonomous Mobile Robotics (ongoing)
               </ul>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-xs-4 job-title">Online Coursework</div>
-          </div>
-          <div class="row">
+          </div> -->
+          <!-- <div class="row">
             <div class="col-xs-4 course-details" >
               <ul>
                 <li>  <span class="skill-title">Machine Learning </span> |  Coursera </li>
-                <!-- <li>  <span class="skill-title">R Programming </span> |  Coursera </li> -->
               </ul>
             </div>
             <div class="col-xs-4 course-details" >
               <ul>
               <li>  <span class="skill-title">Computational Investing </span> |  Coursera </li>
-                <!-- <li>  <span class="skill-title">R Programming </span> |  Coursera </li> -->
               </ul>
             </div>
 
             <div class="col-xs-4 course-details" >
               <ul>
-                <!-- <li>  <span class="skill-title">Intro to Financial Accounting </span> |  Coursera </li> -->
                 <li>  <span class="skill-title">Exploratory Data Analysis </span> |  Coursera </li>
-                <!-- <li>  <span class="skill-title">Scalable Machine Learning </span> |  edX (BerkeleyX) </li> -->
               </ul>
             </div>
 
-          </div>
+          </div> -->
         </div>
       </div>
 
