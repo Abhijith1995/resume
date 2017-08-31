@@ -70,7 +70,7 @@
   .company{
     font-family: Raleway;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
   }
   .place-date{
@@ -120,6 +120,12 @@
   .tech{
     font-style: italic;
   }
+  .highlight{
+    font-family: Raleway;
+    font-weight: 700;
+    color: #003399
+  }
+
   @media print {
     a,
     a:link:after,
@@ -169,8 +175,8 @@
             <div class="col-xs-12 details">
               <ul>
                 <li>Worked on the core infrastructure of the Advertising Data Platform team, Amazon's largest data platform that stores and processes all raw logs from the Amazon Ad Exchange. The team handles tens of petabytes of data on a monthly basis, that is stored across globally distributed Hadoop clusters.</li>
-                <li>Changed Hadoop source code to interface with internal Amazon tools and AWS KMS, enabling Hadoop tools like Hive, Spark and MapReduce to read encrypted data stored in S3 in a distributed manner. This can result in storage cost savings of up to 75% by switching to S3 from HDFS.</li>
-                <li>Modifed the team's infrastructure to enable running Hive queries on encrypted data stored in S3. Performed benchmark tests with Hive, querying hundreds of terabytes of data in order to compare performance tradeoffs at scale between HDFS and S3.</li>
+                <li>Changed Hadoop source code to interface with internal Amazon services and AWS KMS, enabling tools like Hive, Spark and MapReduce to execute distributed queries on encrypted data stored in S3. This can result in storage cost savings of up to 75% by using S3 as a storage layer instead of HDFS.</li>
+                <li>Performed benchmark tests with Hive, querying hundreds of terabytes of data in order to compare performance tradeoffs at scale between HDFS and S3.</li>
               </ul>
             </div>
           </div>
@@ -187,11 +193,11 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">Distributed Systems Engineering Intern</span> | <span class="company">Wave</span>  </div>
+            <div class="col-xs-8"><span class="job-title">Distributed Systems Engineering Intern</span> | <span class="company">Wave Financial Inc.</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Developed scalable, fault-tolerant backend services with Python and Django for the cloud-based accounting product that has about 2.2 million users.</li>
+                <li>Developed scalable, fault-tolerant backend services with Python and Django for a cloud-based accounting product that has 2.5 million customers.</li>
                 <li>Used messaging queues, database sharding, worker machines and denormalization to perform heavy computations asynchronously, <br>
                   leading to a 90% reduction in time to generate financial reports for each user.
                 </li>
@@ -204,8 +210,8 @@
             <div class="col-xs-offset-2 col-xs-2 place-date">May 2015 - Aug 2015</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Worked with the applied analytics division to add features, improvements and bug fixes to a big data engine which used transformation rules to clean, reduce and prepare
-                  large datasets for analytics using Hadoop, Node.js, Redis, Rails and PostgreSQL.
+                <li>Worked with the applied analytics division to add features, improvements and bug fixes to a big data engine which used transformation rules to clean, reduce
+                  <br>and prepare large datasets for analytics using Hadoop, Node.js, Redis, Rails and PostgreSQL.
                 </li>
                 <li> Developed a C++ and Python GUI that uses machine learning algorithms and relevant libraries (Numpy, Matlplotlib, Scikit-learn)  to authenticate users <br>
                   in real time based on their ECG (Electrocardiogram) which was acquired using data streamed via Bluetooth from a wearable device (Nymi band).
@@ -318,7 +324,7 @@
             <ul>
               <li> BASc in Mechatronics Engineering, Class of 2018. Currently Enrolled in 4A. Cumalative GPA: 3.5/4</li>
               <li> <span class="skill-title">Relevant Coursework: </span> Algorithms and Data Structures,  Real time Operating Systems, Embedded Microprocessor Systems and Interfacing
-                <br>Systems and Signals, Numerical Methods, Experimental Design and Statistical Analysis, Control Systems, Autonomous Mobile Robotics (ongoing)
+                <br>Systems and Signals, Numerical Methods, Experimental Design and Statistical Analysis, Control Systems, Autonomous Mobile Robots (ongoing)
               </ul>
             </div>
           </div>
