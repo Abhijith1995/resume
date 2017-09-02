@@ -13,8 +13,8 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
 
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,500,600,700' rel='stylesheet' type='text/css'>
 
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <title>resume</title>
@@ -37,8 +37,8 @@
   li
   {
     font-size: 17px;
-    margin-left: -18px;
-    list-style-type:disc;;
+    margin-left: -20px;
+    list-style-type:disc;
   }
   .main-name{
     margin-bottom: 20px;
@@ -51,9 +51,10 @@
   .heading{
     color: #003399;
     font-family: Raleway;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 300;
-    margin-bottom:1px;
+    margin-bottom:2px;
+    margin-left: -2px;
     -webkit-print-color-adjust:exact;
   }
   .accent-color{
@@ -82,10 +83,10 @@
   }
   .details li{
     padding-bottom: 5px;
-    line-height: 140%;
+    line-height: 130%;
   }
   .details ul {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .skill-details {
     margin-top: -2px;
@@ -122,7 +123,7 @@
   }
   .highlight{
     font-family: Raleway;
-    font-weight: 700;
+    font-weight: 500;
     color: #003399
   }
   .links{
@@ -137,7 +138,7 @@
       },
     }
   @media print {
-      .heading, .accent-color, .links {
+      .heading, .accent-color, .links, .highlight {
         content: "" !important;
         color: #003399 !important;
       }
@@ -172,49 +173,49 @@
         <div class="heading">WORK EXPERIENCE</div>
         <div class="work-exp">
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">Software Engingeering Intern</span> <span class="company">| A9.com (An Amazon Subsidiary)</span>  </div>
+            <div class="col-xs-8"><span class="job-title">Software Engingeering Intern</span> <span class="company"> | A9.com (An Amazon Subsidiary)</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">May 2017 - Aug 2017</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Worked on the core infrastructure of the Advertising Data Platform team, that stores and processes data from the Amazon Ad Exchange. The team is Amazon's largest data platform and handles tens of petabytes of data on a monthly basis, that is stored across globally distributed Hadoop clusters.</li>
-                <li>Changed Hadoop source code to interface with internal Amazon encryption services, enabling tools like Hive and Spark to execute distributed queries on encrypted data stored in S3. This is part of a team effort to switch to S3 from HDFS, thereby reducing storage costs by 75%.</li>
-                <li>Performed benchmark tests with Hive, querying hundreds of terabytes of data in order to compare performance tradeoffs at scale between HDFS and S3.</li>
+                <li>Worked on the <span class="highlight">core infrastructure</span> of the <span class="highlight">Advertising Data Platform</span> team, that stores and processes data from the Amazon Ad Exchange. The team is Amazon's largest data platform and handles <span class="highlight">tens of petabytes</span> of data on a monthly basis, that is stored across globally distributed Hadoop clusters.</li>
+                <li>Changed <span class="highlight">Hadoop</span> source code to interface with internal Amazon encryption services, enabling tools like <span class="highlight">Hive</span> and <span class="highlight">Spark</span> to execute distributed queries on encrypted data stored in <span class="highlight">S3</span>. This is part of a team effort to switch to <span class="highlight">S3</span> from <span class="highlight">HDFS</span>, thereby <span class="highlight">reducing storage costs by 75%</span>.</li>
+                <li>Performed benchmark tests with <span class="highlight">Hive</span>, querying <span class="highlight">hundreds of terabytes</span> of data in order to compare performance tradeoffs at scale between  <span class="highlight">HDFS</span> and  <span class="highlight">S3</span>.</li>
               </ul>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">Software Development Intern</span> <span class="company">| Capital One Canada</span>  </div>
+            <div class="col-xs-8"><span class="job-title">Software Development Intern</span> <span class="company"> | Capital One Canada</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2016 - Dec 2016</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Developed a secure, highly-available and project neutral infrastructure for releases of Data Science projects using AWS EC2, Docker and Terraform.</li>
-                <li>Wrote and shipped a Node.js API that interfaced with internal services and data models, to serve Mobile Beta users with their monthly recurring transactions.</li>
+                <li>Developed a <span class="highlight">secure, highly-available</span> and <span class=highlight>project neutral infrastructure</span> for releases of Data Science projects using <span class="highlight">AWS EC2, Docker</span> and <span class="highlight">Terraform</span>.</li>
+                <li>Wrote a <span class="highlight">Node.js API</span> that integrated with internal services and data models, to serve Mobile Beta users with their recurring monthly transactions.</li>
                 <!-- <li>Developed the API with Node.js and Express to  and data models. Added tests using Chai, Mocha and Sinon to prevent regression bugs, mock external dependencies and test fault tolerance.</li> -->
               </ul>
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">Distributed Systems Engineering Intern</span><span class="company">| Wave Financial Inc.</span>  </div>
+            <div class="col-xs-8"><span class="job-title">Distributed Systems Engineering Intern</span><span class="company"> | Wave Financial Inc.</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Developed scalable, fault-tolerant backend services with Python and Django for a cloud-based accounting product that has 2.5 million customers.</li>
+                <li>Developed scalable, fault-tolerant  <span class="highlight"> backend APIs</span> with <span class="highlight">Python</span> and <span class="highlight">Django</span> for a cloud-based accounting product that has <span class="highlight">2.5 million customers</span>.</li>
                 <!-- <li>Used messaging queues, database sharding and worker machines to perform heavy computations asynchronously, <br>
                   leading to a 90% reduction in time to generate financial reports for each user.
                 </li> -->
-                <li>Stored each database change as a sequenced, immutable and queryable event (Event Sourcing), to improve concurrency control and auditability.</li>
+                <li>Stored each database change as a sequenced, immutable and queryable event (<span class="highlight">Event Sourcing</span>), to improve <span class="highlight">concurrency control</span> and <span class="highlight">auditability</span>.</li>
               </ul>
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">R&amp;D Intern</span><span class="company">| DST Systems</span>  </div>
+            <div class="col-xs-8"><span class="job-title">R&amp;D Intern</span><span class="company"> | DST Systems</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">May 2015 - Aug 2015</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Added features and bug fixes to a big data engine that cleans and prepares large datasets for analytics, using Hadoop, Node.js and Ruby on Rails.
+                <li>Added features and bug fixes to a <span class="highlight">big data engine</span> that cleans and prepares large datasets for analytics, using <span class="highlight">Hadoop, Node.js</span> and <span class="highlight">Ruby on Rails</span>.
                 </li>
-                <li> Developed a C++ and Python GUI that authenticates users with electrocardiogram (ECG) data, streamed in real time via Bluetooth from a wearable device.
+                <li> Developed a <span class="highlight">C++</span> and <span class="highlight">Python GUI</span> that authenticates users with electrocardiogram (ECG) data, streamed in real time via Bluetooth from a wearable device.
                 </li>
                 <!-- <li>Built an image viewer with Node.js and Bootstrap that interfaced with eye tracking hardware to monitor user performance and generate live heat maps.</li> -->
               </ul>
@@ -231,12 +232,12 @@
             </div>
           </div> -->
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">Junior  Developer &amp; QA</span> <span class="company">| Protecode Inc.</span>  </div>
+            <div class="col-xs-8"><span class="job-title">Junior  Developer &amp; QA</span> <span class="company"> | Protecode Inc.</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2014 - April 2014</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Optimized SQL of a data warehousing GUI written in C# and PostgreSQL using SQL joins, reducing data processing time by about 25%.</li>
-                <li>Developed web crawlers in C# to download over 120,000 open source projects into a MySQL database from websites like Github and SourceForge.</li>
+                <li>Optimized <span class="highlight">SQL</span> of a data warehousing GUI written in <span class="highlight">C# </span>and <span class="highlight">PostgreSQL</span> using SQL joins, <span class="highlight">reducing data processing time by 25%</span>.</li>
+                <li>Developed web crawlers in <span class="highlight">C#</span> to download over <span class="highlight">120,000 open source projects</span> into a <span class="highlight">MySQL</span> database from websites like <span class="highlight">Github</span> and <span class="highlight">SourceForge</span>.</li>
               </ul>
             </div>
           </div>
@@ -272,7 +273,7 @@
                 <span class="tech">Tech Used: Python, Flask, Node.js, Express, AWS EC2, MongoDB, jQuery</span>
               </li>
               <li><span class="project-title">Audio Player : </span>
-                (June 2016) Designed a microcontroller system that plays .wav files from an SD card. Implemented device drivers to read data from  <br>an SD card,
+                (June 2016) Designed a microcontroller system that plays .wav files from an SD card. Implemented device drivers to read data from  <br>a FAT filesystem,
                 and send audio data through an audio CODEC for playback.
                 <span class="tech">Tech Used:  C, Altera DE-2 Dev Board</span>
               </li>
