@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,500,600,700' rel='stylesheet' type='text/css'>
+
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>resume</title>
+  <!-- Custom CSS -->
+  <style>
+
+  h1 {
+    font-family: Ubuntu;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    /* line-height: 60px; */
+  }
+  body{
+    font-family: Lato;
+    font-size: 11px;
+    -webkit-print-color-adjust: exact;
+  }
+  li
+  {
+    font-size: 11px;
+    margin-left: -20px;
+    list-style-type:disc;
+  }
+  .main-name{
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .skill-title{
+    font-weight: 700;
+    font-family: Raleway;
+  }
+  .heading{
+    color: #003399;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom:2px;
+    /* margin-left: 1px; */
+    -webkit-print-color-adjust:exact;
+  }
+  .accent-color{
+    color: #003399
+  }
+  .work-exp .row{
+    /* margin-bottom: 2px; */
+  }
+  .job-title{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .company{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+  }
+  .place-date{
+    font-family: Lato;
+    font-style: italic;
+    font-size: 9px;
+    margin-top: 7px;
+    padding-top: 8px;
+  }
+  .details li{
+    padding-bottom: 5px;
+    line-height: 130%;
+  }
+  .details ul {
+    margin-bottom: 5px;
+  }
+  .skill-details {
+    margin-top: -2px;
+  }
+  .skill-details li {
+    margin-left: -40px;
+    list-style-type: none;
+    line-height: 180%;
+  }
+  .course-details li{
+    margin-left: -18px;
+    list-style-type: disc;
+    line-height: 180%;
+  }
+  .project-title{
+    font-family: Raleway;
+    font-weight: 700;
+  }
+  .project-details {
+    line-height: 130%;
+  }
+  .project-details li{
+    padding-bottom: 12px;
+    margin-left: -39px;
+    list-style-type: none;
+  }
+  .project-details li:last-child{
+    margin-bottom: -5px;
+    margin-left: -39px;
+    list-style-type: none;
+  }
+  .tech{
+    font-style: italic;
+  }
+  .highlight{
+    font-family: Raleway;
+    font-weight: 500;
+    color: #003399
+  }
+  .links{
+    margin-top: 13px;
+  }
+
+  @media print {
+    a,
+    a:link:after,
+    a:visited:after,
+    .links {
+      content: "" !important;
+      color: #003399 !important;
+      },
+    }
+  @media print {
+      .heading, .accent-color, .highlight, .links {
+        content: "" !important;
+        color: #003399 !important;
+      }
+    }
+    </style>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </head>
+
+  <body>
+
+    <div class="container content">
+      <div class="row">
+
+        <div class="row main-name" >
+          <div class="col-xs-8">
+            <h1>ABHIJITH  <span class="accent-color">RAMALINGAM</span></h1>
+            <a href="http://www.abhijithramalingam.com"> www.abhijithramalingam.com </a> | Looking for full time positions within Canada, starting June 2018
+          </div>
+          <div class="col-xs-4 links">
+            <div class="row">
+              <div class="col-xs-offset-2 col-xs-10">
+                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:abhijith.ramalingam@live.com">abhijith.ramalingam@live.com</a>
+                <br>
+                <i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://github.com/Abhijith1995" >github.com/Abhijith1995</a>
+                <br>
+                <i class="fa fa-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/abramalingam" >linkedin.com/in/abramalingam</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="heading">WORK EXPERIENCE</div>
+        <div class="work-exp">
+          <div class="row">
+            <div class="col-xs-8"><span class="job-title">Software Engingeering Intern</span> <span class="company"> | Amazon (A9.com)</span>  </div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">May 2017 - Aug 2017</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li>Worked on the <span class="highlight">core infrastructure</span> of the <span class="highlight">Advertising Data Platform</span> team, that stores and processes data from the Amazon Ad Exchange. The team is Amazon's largest data platform and handles <span class="highlight">tens of petabytes</span> of data on a monthly basis, that is stored across globally distributed Hadoop clusters.</li>
+                <li>Changed <span class="highlight">Hadoop</span> source code to interface with internal Amazon encryption services, enabling tools like <span class="highlight">Hive</span> and <span class="highlight">Spark</span> to execute distributed queries on encrypted data stored in <span class="highlight">S3</span>. This is part of a team effort to switch to <span class="highlight">S3</span> from <span class="highlight">HDFS</span>, thereby <span class="highlight">reducing storage costs by 75%</span>.</li>
+                <li>Performed benchmark tests with Hive, querying <span class="highlight">hundreds of terabytes</span> of data in order to compare performance tradeoffs at scale between  <span class="highlight">HDFS</span> and  <span class="highlight">S3</span>.</li>
+                <!-- <li>Used internal Amazon tools to deploy changes to hundreds of machines across multiple clusters with <span class="highlight">zero downtime </span>.</li> -->
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-8"><span class="job-title">Software Development Intern</span> <span class="company"> | Capital One Canada</span>  </div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2016 - Dec 2016</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li>Developed a <span class="highlight">secure, highly-available</span> and <span class=highlight>project neutral infrastructure</span> for releases of Data Science projects using <span class="highlight">AWS EC2, Docker</span> and <span class="highlight">Terraform</span>.</li>
+                <li>Wrote a <span class="highlight">Node.js API</span> that integrated with internal services and data models, to serve Mobile Beta users with their recurring monthly transactions.</li>
+                <!-- <li>Developed the API with Node.js and Express to  and data models. Added tests using Chai, Mocha and Sinon to prevent regression bugs, mock external dependencies and test fault tolerance.</li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-8"><span class="job-title">Distributed Systems Engineering Intern</span><span class="company"> | Wave Financial Inc.</span>  </div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li>Developed scalable, fault-tolerant  <span class="highlight"> backend APIs</span> with <span class="highlight">Python</span> and <span class="highlight">Django</span> for a cloud-based accounting product that has <span class="highlight">2.5 million customers</span>.</li>
+                <!-- <li>Used messaging queues, database sharding and worker machines to perform heavy computations asynchronously, <br>
+                  leading to a 90% reduction in time to generate financial reports for each user.
+                </li> -->
+                <li>Stored each database change as a sequenced, immutable and queryable event (<span class="highlight">Event Sourcing</span>), to improve <span class="highlight">concurrency control</span> and <span class="highlight">auditability</span>.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-8"><span class="job-title">R&amp;D Intern</span><span class="company"> | DST Systems</span>  </div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">May 2015 - Aug 2015</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li>Added features and bug fixes to a <span class="highlight">big data engine</span> that cleans and prepares large datasets for analytics, using <span class="highlight">Hadoop, Node.js</span> and <span class="highlight">Ruby on Rails</span>.
+                </li>
+                <li> Developed a <span class="highlight">C++</span> and <span class="highlight">Python GUI</span> that authenticates users with electrocardiogram (ECG) data, streamed in real time via Bluetooth from a wearable device.
+                </li>
+                <!-- <li>Built an image viewer with Node.js and Bootstrap that interfaced with eye tracking hardware to monitor user performance and generate live heat maps.</li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-xs-8"><span class="job-title">Test Developer</span> | <span class="company">HubHead Corp</span>  </div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2014 - Dec 2014</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li>Wrote end to end and unit tests for a cloud-based data quality product using Angular.js, Protractor, and Selenium, increasing test coverage by 40%.</li>
+                <li>Detected and documented software bugs, by managing the automated testing infrastructure running on a Continuous Integration server (Jenkins).</li>
+              </ul>
+            </div>
+          </div> -->
+          <!-- <div class="row">
+            <div class="col-xs-8"><span class="job-title">Junior  Developer &amp; QA</span> <span class="company"> | Protecode Inc.</span>  </div>
+            <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2014 - April 2014</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <li>Optimized <span class="highlight">SQL</span> of a data warehousing GUI written in <span class="highlight">C# </span>and <span class="highlight">PostgreSQL</span> using SQL joins, <span class="highlight">reducing data processing time by 25%</span>.</li>
+                <li>Developed web crawlers in <span class="highlight">C#</span> to download over <span class="highlight">120,000 open source projects</span> into a <span class="highlight">MySQL</span> database from websites like Github and SourceForge.</li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+
+        <div  class="heading">TECHNICAL SKILLS</div>
+
+        <div class="row skill-details">
+          <div class="col-xs-6">
+            <ul>
+              <li><span class="skill-title">Languages: </span>Python, JavaScript, Java, C/C++</li>
+              <li><span class="skill-title">Data Analysis: </span>MATLAB, Numpy, Scikit-learn, Pandas, Matplotlib</li>
+              <li><span class="skill-title">AWS: </span>EC2, S3, RDS, Lambda, KMS, CloudWatch, IoT</li>
+              <li><span class="skill-title">Tools: </span>RabbitMQ, Docker, Terraform, Git, Maven</li>
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <ul>
+              <li><span class="skill-title">Front End: </span>HTML/CSS, jQuery, Bootstrap, React, Redux</li>
+              <li><span class="skill-title">Back End: </span>Node.js, Socket.io, Express, Django</li>
+              <li><span class="skill-title">Big Data: </span>Hadoop, Hive, Spark</li>
+              <li><span class="skill-title">Database: </span>MySQL, PostgreSQL, MongoDB, Redis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="heading">PROJECTS</div>
+        <div class="row">
+          <div class="col-xs-12 project-details">
+            <ul>
+              <li>
+                <span class="project-title">Smart Vents : </span>
+                (Sept 2017 - March 2018) Cloud Lead for an IoT vent system that allows users to control individual room temperatures inside their homes using smart vents and an ecobee smart thermostat. Currently building cloud infrastructure, web API and parts of a mobile app.
+                <span class="tech">Tech Used: Python, AWS (IoT, EC2, S3)</span>
+              </li>
+
+              <li>
+                <span class="project-title">Autonomous Mobile Robotics Labs: </span>
+                (Sept 2017 - Nov 2017) Implemented path planning, mapping and localization for a small personal robot (turtlebot) as part of coursework for "Autonomous Mobile Robots".
+                <span class="tech">Tech Used: C++, ROS <span>
+              </li>
+
+              <li><span class="project-title">Personal Finance Chatbot : </span>
+                (October 2016) Developed a Facebook Messenger chatbot that allows users to keep track of their finances, set savings goals <br>and visualize their spending patterns.
+                <span class="tech">Tech Used: Python, Flask, Node.js, Express, AWS EC2, MongoDB, jQuery</span>
+              </li>
+              <li><span class="project-title">Audio Player : </span>
+                (June 2016) Designed a microcontroller system that plays .wav files from an SD card. Implemented device drivers to read data from  <br>a FAT filesystem,
+                and send audio data through an audio CODEC for playback.
+                <span class="tech">Tech Used:  C, Altera DE-2 Dev Board</span>
+              </li>
+              <li><span class="project-title">Tumor Classifier : </span>
+                (April 2016 ) Used a variety of machine learning algorithms to build binary classifiers to predict the nature of a tumor based on open data gathered from an
+                online breast cancer dataset.
+                <span class="tech">Tech Used: Python, Numpy, Pandas, Scikit- Learn</span>
+              </li>
+              <!-- <li>
+                <span class="project-title">Audio Transcription : </span>
+                (Dec 2015) Used frequency analysis to transcribe classical piano pieces into sheet music. Resynthesized audio from
+                transcription <br> and then applied statistical analysis techniques to compare original and resynthesized audio signal.
+                <span class="tech">Tech Used: MATLAB</span>
+              </li> -->
+
+              <li>
+                <span class="project-title">Bouncing Ball Game : </span>
+                (Nov 2015) Wrote a game that simulates bouncing balls on an LCD screen of a microcontroller. It was implemented using <br>
+                a multi-threaded architecture, semaphore locks and hardware interrupts to interface with peripherals.
+                <span class="tech">Tech Used: C, ARM-Keil Development Board</span>
+              </li>
+              <!-- <li>
+                <span class="project-title">Path Follower : </span>
+                (Sept-Nov 2015) Soldered and configured sensors and motors onto a PCB creating a small robot.
+                Tested sensors using an oscilloscope, <br>signal generator and multimeter.
+                Programmed the robot in C to follow a path using magnetic and light sensors.
+              </li> -->
+              <!-- <li>
+                <span class="project-title">Makeshift Caliper  : </span>
+                (March 2015) Calibrated readings from an infrared sensor using a microcontroller to measure small distances.
+                Used machine learning algorithms (Nearest Neighbor Search, Polynomial Regression) to reduce measurement uncertainty to 0.15 cm.
+                <span class="tech">Tech Used: Python, Numpy,  Arduino</span>
+              </li> -->
+              <!-- <li>
+                <span class="project-title">Market Simulator : </span>
+                (Oct 2014 - Nov 2014) Developed a program that accepts trade orders for stocks at past dates to calculate profit using historical data <br>from Yahoo Finance API.
+                <span class="tech">Tech Used: Python, Numpy, Pandas, Matplotlib</span>
+              </li> -->
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="heading">EDUCATION</div>
+        <div class="row">
+          <div class="col-xs-4 job-title">University of Waterloo</div>
+          <div class="col-xs-offset-6 col-xs-2 place-date">Sept 2013 - Present</div>
+          <div class="col-xs-12 details" >
+            <ul>
+              <li> BASc in Mechatronics Engineering, Graduating in June, 2018</li>
+              <li> <span class="skill-title">Relevant Coursework: </span> Algorithms and Data Structures,  Real time Operating Systems, Embedded Microprocessor Systems
+                <br>Statistical Analysis, Autonomous Mobile Robots, Pattern Recognition, Programming for performance
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 job-title">Online Coursework</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 course-details" >
+              <ul>
+                <li>  <span class="skill-title">Machine Learning </span> |  Coursera </li>
+              </ul>
+            </div>
+            <div class="col-xs-4 course-details" >
+              <ul>
+              <li>  <span class="skill-title">Computational Investing </span> |  Coursera </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-4 course-details" >
+              <ul>
+                <li>  <span class="skill-title">Exploratory Data Analysis </span> |  Coursera </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+</div>
+<!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery Version 1.11.1 -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+
+</html>
