@@ -31,12 +31,12 @@
   }
   body{
     font-family: Lato;
-    font-size: 11px;
+    font-size: 13px;
     -webkit-print-color-adjust: exact;
   }
   li
   {
-    font-size: 11px;
+    font-size: 12px;
     margin-left: -20px;
     list-style-type:disc;
   }
@@ -53,34 +53,38 @@
     color: #003399;
     font-family: Raleway;
     font-size: 15px;
-    font-weight: 300;
-    margin-bottom:2px;
+    font-weight: 400;
+    margin-bottom: 8px;
     /* margin-left: 1px; */
     -webkit-print-color-adjust:exact;
   }
   .accent-color{
     color: #003399
   }
+  .work-exp {
+    margin-bottom: 10px;
+  }
   .work-exp .row{
-    /* margin-bottom: 2px; */
+    margin-bottom: 2px;
   }
   .job-title{
     font-family: Raleway;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
   }
   .company{
     font-family: Lato;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
   }
   .place-date{
     font-family: Lato;
     font-style: italic;
-    font-size: 9px;
-    margin-top: 7px;
-    padding-top: 8px;
+    font-size: 11px;
+    text-align: right;
+    /* margin-top: 7px; */
+    /* padding-top: 8px; */
   }
   .details li{
     padding-bottom: 5px;
@@ -107,10 +111,10 @@
     font-weight: 700;
   }
   .project-details {
-    line-height: 130%;
+    line-height: 140%;
   }
   .project-details li{
-    padding-bottom: 12px;
+    padding-bottom: 13px;
     margin-left: -39px;
     list-style-type: none;
   }
@@ -128,7 +132,9 @@
     color: #003399
   }
   .links{
-    margin-top: 13px;
+    font-size: 12px;
+    margin-top: 10px;
+    /* margin-left: -50px; */
   }
 
   @media print {
@@ -158,7 +164,7 @@
         <div class="row main-name" >
           <div class="col-xs-8">
             <h1>ABHIJITH  <span class="accent-color">RAMALINGAM</span></h1>
-            <a href="http://www.abhijithramalingam.com"> www.abhijithramalingam.com </a> | Looking for full time roles within Canada, starting July 2018
+            Pursuing full time roles within Toronto | Open to remote roles 
           </div>
           <div class="col-xs-4 links">
             <div class="row">
@@ -177,35 +183,48 @@
         <div class="heading">WORK EXPERIENCE</div>
         <div class="work-exp">
           <div class="row">
-            <div class="col-xs-8"><span class="job-title">Software Engineering Intern</span> <span class="company"> | Amazon (A9.com)</span>  </div>
-            <div class="col-xs-offset-2 col-xs-2 place-date">May 2017 - Aug 2017</div>
+            <div class="col-xs-6"><span class="job-title">Backend Developer</span> <span class="company"> | Hubba </span>  </div>
+            <div class="col-xs-offset-2 col-xs-4 place-date">Sept 2018 - Dec 2020</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Worked on the <span class="highlight">core infrastructure</span> of the <span class="highlight">Advertising Data Platform</span>, that stores and processes data from the Amazon Ad Exchange. The team is Amazon's largest data platform and handles <span class="highlight">tens of petabytes</span> of data monthly</li>
+                <li>Developed technical solutions and features for an ecommerce marketplace using microservices built with <span class="highlight">Node.js, MongoDB, RabbitMQ, AWS</span>.</li>
+                <li>Made architecture upgrades to a tangled, legacy microservices approach by using a <span class="highlight"> GraphQL</span> gateway, thereby reducing API overhead.</li>
+                <li>Collaborated with a data team to build a realtime ETL service that aggregates data from different sources to Salesforce using <span class="highlight">Python, PubSub, Kubernetes</span>
+                  , in order to deliver time-sensitive, targeted information to inside Sales teams, leading to increases in key sales figures.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-8"><span class="job-title">Software Engineering Intern</span> <span class="company"> | Amazon (A9.com)</span>  </div>
+            
+            <div class="col-xs-offset-1 col-xs-3 place-date">May 2017 - Aug 2017</div>
+
+            <div class="col-xs-12 details">
+              <ul>
+                <li>Worked on the <span class="highlight">core infrastructure</span> of the <span class="highlight">Advertising Data Platform</span>, that stores and processes data from the Amazon Ad Exchange. The team is Amazon's largest data platform and handles <span class="highlight">tens of petabytes</span> of data monthly.</li>
                 <li>Reduced data storage costs by modifying open source  <span class="highlight">Hadoop</span> code to integrate with an internal Amazon service, allowing analysts to create <span class="highlight">Hive</span> jobs and write distributed queries on encrypted data stored in <span class="highlight">AWS S3</span>.</li>
-                <li>Performed benchmark tests with <span class="highlight">Hive</span>, querying <span class="highlight">hundreds of terabytes</span> of data in order to compare performance tradeoffs at scale between  <span class="highlight">HDFS</span> and  <span class="highlight">S3</span>.</li>
-                <!-- <li>Used internal Amazon tools to deploy changes to hundreds of machines across multiple Hadoop clusters with zero downtime.</li> -->
+                <li>Performed benchmark tests with <span class="highlight">Hive</span>, querying terabytes of data to compare performance tradeoffs at scale between  <span class="highlight">HDFS</span> and  <span class="highlight">S3</span>.</li>
               </ul>
             </div>
           </div>
 
           <div class="row">
             <div class="col-xs-8"><span class="job-title">Software Development Intern</span> <span class="company"> | Capital One Canada</span>  </div>
-            <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2016 - Dec 2016</div>
+            <div class="col-xs-offset-1 col-xs-3 place-date">Sept 2016 - Dec 2016</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Developed a <span class="highlight">secure, highly-available</span> and <span class=highlight>project neutral infrastructure</span> for releases of Data Science projects using <span class="highlight">AWS EC2, Docker</span> and <span class="highlight">Terraform</span>.</li>
-                <li>Wrote a <span class="highlight">Node.js API</span> that integrated with internal services and data models, to serve Mobile Beta users with their recurring monthly transactions.</li>
+                <li>Developed a <span class="highlight">secure, highly-available</span> infrastructure for releases of Data Science projects using <span class="highlight">EC2, Docker, Terraform</span>.</li>
+                <li>Wrote a <span class="highlight">Node.js API</span> that integrated with internal data models and services, to present Mobile Beta users with their predicted recurring monthly credit card transactions.</li>
                 <!-- <li>Developed the API with Node.js and Express to  and data models. Added tests using Chai, Mocha and Sinon to prevent regression bugs, mock external dependencies and test fault tolerance.</li> -->
               </ul>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-8"><span class="job-title">Distributed Systems Engineering Intern</span><span class="company"> | Wave Inc.</span>  </div>
-            <div class="col-xs-offset-2 col-xs-2 place-date">Jan 2016 - April 2016</div>
+            <div class="col-xs-offset-1 col-xs-3 place-date">Jan 2016 - April 2016</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Developed scalable, fault-tolerant  <span class="highlight"> backend APIs</span> with <span class="highlight">Python</span> and <span class="highlight">Django</span> for a cloud-based accounting product that has <span class="highlight">2.5 million customers</span>.</li>
+                <li>Developed scalable, fault-tolerant  <span class="highlight"> backend APIs</span> with <span class="highlight">Python</span> and <span class="highlight">Django</span> for a cloud-based accounting product.</li>
                 <!-- <li>Used messaging queues, database sharding and worker machines to perform heavy computations asynchronously, <br>
                   leading to a 90% reduction in time to generate financial reports for each user.
                 </li> -->
@@ -213,7 +232,7 @@
               </ul>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-xs-8"><span class="job-title">R&amp;D Intern</span><span class="company"> | DST Systems</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">May 2015 - Aug 2015</div>
             <div class="col-xs-12 details">
@@ -222,10 +241,10 @@
                 </li>
                 <li> Developed a <span class="highlight">C++</span> and <span class="highlight">Python GUI</span> that authenticates users with electrocardiogram (ECG) data, streamed in real time via Bluetooth from a wearable device.
                 </li>
-                <!-- <li>Built an image viewer with Node.js and Bootstrap that interfaced with eye tracking hardware to monitor user performance and generate live heat maps.</li> -->
+                 <li>Built an image viewer with Node.js and Bootstrap that interfaced with eye tracking hardware to monitor user performance and generate live heat maps.</li> 
               </ul>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="row">
             <div class="col-xs-8"><span class="job-title">Test Developer</span> | <span class="company">HubHead Corp</span>  </div>
             <div class="col-xs-offset-2 col-xs-2 place-date">Sept 2014 - Dec 2014</div>
@@ -253,17 +272,14 @@
         <div class="row skill-details">
           <div class="col-xs-6">
             <ul>
-              <li><span class="skill-title">Languages: </span>Python, JavaScript, Java, C/C++</li>
-              <li><span class="skill-title">Data Analysis: </span>MATLAB, Numpy, Scikit-learn, Pandas, Matplotlib</li>
-              <li><span class="skill-title">AWS: </span>EC2, S3, Lambda, EMR, IoT</li>
-              <li><span class="skill-title">Tools: </span>RabbitMQ, Docker, Terraform, Git, Maven</li>
+              <li><span class="skill-title">Languages: </span>Python, JavaScript, Typescript, Java, C/C++</li>
+              <li><span class="skill-title">Data Analysis: </span>Numpy, Pandas, Matplotlib, Scikit-learn,</li>
+              <li><span class="skill-title">Dev Ops: </span> Bash, Docker, Kubernetes, Terraform, AWS ECS, RabbitMQ </li>
             </ul>
           </div>
           <div class="col-xs-6">
             <ul>
-              <li><span class="skill-title">Front End: </span>HTML/CSS, jQuery, Bootstrap, React, Redux</li>
-              <li><span class="skill-title">Back End: </span>Node.js, Socket.io, Express, Django</li>
-              <li><span class="skill-title">Big Data: </span>Hadoop, Hive, Spark</li>
+              <li><span class="skill-title">Web: </span>HTML/CSS, Node.js, Express, React, Django, Flask</li>
               <li><span class="skill-title">Database: </span>MySQL, PostgreSQL, MongoDB, Redis</li>
             </ul>
           </div>
@@ -276,7 +292,7 @@
               <li>
                 <span class="project-title">Smart Vents : </span>
                 (Sept 2017 - March 2018) Cloud Lead for an IoT (Internet of Things) system that lets users control individual room temperatures inside their homes using a smart vent system and a smart thermostat. 
-                Won a $500 award for "Best IoT Project" at the Mechatronics Engineering Design Symposium.<br>
+                Won a $500 award for "Best IoT Project" at the Mechatronics Engineering Design Symposium. 
                 
                 <span class="tech">Tech Used: Python, Node.js, AWS (IoT, EC2, S3), Heroku, MongoDB</span>
               </li>
@@ -288,10 +304,10 @@
               </li>
 
               <li><span class="project-title">Personal Finance Chatbot : </span>
-                (October 2016) Developed a Facebook Messenger chatbot that allows users to keep track of their finances, set savings goals <br>and visualize their spending patterns.
+                (October 2016) Developed a Facebook Messenger chatbot that allows individuals to keep track of their finances, set savings goals and visualize their spending patterns.
                 <span class="tech">Tech Used: Python, Flask, Node.js, Express, AWS EC2, MongoDB, jQuery</span>
               </li>
-              <li><span class="project-title">Audio Player : </span>
+              <!-- <li><span class="project-title">Audio Player : </span>
                 (June 2016) Designed a microcontroller system that plays .wav files from an SD card. Implemented device drivers to read data from  <br>a FAT filesystem,
                 and send audio data through an audio CODEC for playback.
                 <span class="tech">Tech Used:  C, Altera DE-2 Dev Board</span>
@@ -300,7 +316,7 @@
                 (April 2016 ) Used a variety of machine learning algorithms to build binary classifiers to predict the nature of a tumor based on open data gathered from an
                 online breast cancer dataset.
                 <span class="tech">Tech Used: Python, Numpy, Pandas, Scikit- Learn</span>
-              </li>
+              </li> -->
               <!-- <li>
                 <span class="project-title">Audio Transcription : </span>
                 (Dec 2015) Used frequency analysis to transcribe classical piano pieces into sheet music. Resynthesized audio from
@@ -308,12 +324,12 @@
                 <span class="tech">Tech Used: MATLAB</span>
               </li> -->
 
-              <li>
+              <!-- <li>
                 <span class="project-title">Bouncing Ball Game : </span>
                 (Nov 2015) Wrote a game that simulates bouncing balls on an LCD screen of a microcontroller. It was implemented using <br>
                 a multi-threaded architecture, semaphore locks and hardware interrupts to interface with peripherals.
                 <span class="tech">Tech Used: C, ARM-Keil Development Board</span>
-              </li>
+              </li> -->
               <!-- <li>
                 <span class="project-title">Path Follower : </span>
                 (Sept-Nov 2015) Soldered and configured sensors and motors onto a PCB creating a small robot.
@@ -339,7 +355,7 @@
         <div class="heading">EDUCATION</div>
         <div class="row">
           <div class="col-xs-4 job-title">University of Waterloo</div>
-          <div class="col-xs-offset-6 col-xs-2 place-date">Sept 2013 - April 2018</div>
+          <div class="col-xs-offset-5 col-xs-3 place-date">Sept 2013 - April 2018</div>
           <div class="col-xs-12 details" >
             <ul>
               <li> BASc in Mechatronics Engineering, Honours, Co-operative Program. Graduated with distinction. </li>
@@ -349,22 +365,22 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-4 job-title">Online Coursework</div>
+            <div class="col-xs-4 job-title">Online Coursework - Coursera</div>
           </div>
           <div class="row">
             <div class="col-xs-4 course-details" >
               <ul>
-                <li>  <span class="skill-title">Machine Learning </span> |  Coursera </li>
+                <li>  <span class="skill-title">Machine Learning  </li>
               </ul>
             </div>
             <div class="col-xs-4 course-details" >
               <ul>
-              <li>  <span class="skill-title">Computational Investing </span> |  Coursera </li>
+              <li>  <span class="skill-title">Intro to Recommendation Systems </li>
               </ul>
             </div>
             <div class="col-xs-4 course-details" >
               <ul>
-                <li>  <span class="skill-title">Exploratory Data Analysis </span> |  Coursera </li>
+                <li>  <span class="skill-title">Exploratory Data Analysis </li>
               </ul>
             </div>
 
