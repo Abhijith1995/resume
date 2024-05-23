@@ -39,6 +39,8 @@
     font-size: 12px;
     margin-left: -20px;
     list-style-type:disc;
+    font-family: Raleway;
+
   }
   .main-name{
     margin-top: -10px;
@@ -70,11 +72,11 @@
   .job-title{
     font-family: Raleway;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
   }
   .company{
-    font-family: Lato;
-    font-weight: 300;
+    font-family: Raleway;
+    font-weight: 700;
     font-size: 15px;
     text-align: center;
   }
@@ -165,12 +167,12 @@
         <div class="row main-name" >
           <div class="col-xs-8">
             <h1>ABHIJITH  <span class="accent-color">RAMALINGAM</span></h1>
-            Pursuing full time roles within Toronto | Open to remote roles 
+            <!-- Pursuing full time roles within Toronto | Open to remote roles  -->
           </div>
           <div class="col-xs-4 links">
             <div class="row">
               <div class="col-xs-offset-2 col-xs-10">
-                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:abhijith.ramalingam@live.com">abhijith.ramalingam@live.com</a>
+                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:ajibith1995@gmail.com">ajibith1995@gmail.com</a>
                 <br>
                 <i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://github.com/Abhijith1995" >github.com/Abhijith1995</a>
                 <br>
@@ -184,16 +186,39 @@
         <div class="heading">WORK EXPERIENCE</div>
         <div class="work-exp">
           <div class="row">
+            <div class="col-xs-8"><span class="job-title">Engineering Team Lead & Sr Software Engineer </span><span class="company"> | BioRender</span>  </div>
+            <div class="col-xs-4 place-date">Mar 2021 - Dec 2023</div>
+            <div class="col-xs-12 details">
+              <ul>
+                <!-- <li>Built infrastructure for a scientific diagramming app with a large active user base; built with </li> -->
+                <li>
+                  Developed cloud infrastructure for a scientific diagramming application with a large active user base to support features like real-time collaboration and statistical computation while remaining resilient using <span class="highlight">Typescript, React, Node.js, MongoDB and AWS</span></li>
+                </li>
+                <li>Migrated the application with zero downtime from <span class="highlight"> Heroku</span> to <span class="highlight"> AWS</span> improving reliability and system integration.
+                </li>
+                <li>Managed and mentored interns through onboarding, 1-1s, feedback sessions and fostered a team-first, collaborative environment.</li>
+                <li>Created processes to increase app reliability through incident response plans, retrospectives, and chaos engineering; led cross-functional incident responses and post-mortems to improve software quality and architecture.
+                <li>
+                  Maintained an observability system using <span class="highlight"> Elastic (ELK)</span> for monitoring, alerting, troubleshooting, and application performance insights; collaborated across teams to promote usage, improve DevOps culture and develop system-wide monitoring.
+                </li>
+                <!-- <li>
+                  Optimized cloud and database file storage costs with AWS S3 and MongoDB, achieving significant cost savings and improving system scalability.
+                </li> -->
+                <!-- <li>Recruited and mentored co-ops through onboarding sessions, weekly 1-1s and code reviews.</li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-xs-6"><span class="job-title">Backend Developer</span> <span class="company"> | Hubba </span>  </div>
             <div class="col-xs-offset-2 col-xs-4 place-date">Sept 2018 - Dec 2020</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Developed technical solutions and features for an <span class="highlight">ecommerce marketplace </span>built with microservices using <span class="highlight">Node.js, MongoDB, AWS ECS</span>.</li>
+                <li>Developed technical features for an ecommerce marketplace built with microservices using <span class="highlight">Node.js, MongoDB, AWS ECS</span>.</li>
                 <li>Collaborated with a data team to build a <span class="highlight"> scalable, realtime pipeline </span> that aggregates data from different sources to Salesforce using <span class="highlight">Python, PubSub, Kubernetes</span>
                   , in order to deliver time-sensitive, targeted information to sales reps, leading to increases in revenue.</li>
                 <li>Led the development of promotions, referrals and payment flows leading to an increase in new buyer signups.</li>
                 <li>Reduced code complexity by making architecture upgrades to a tangled, legacy microservices approach using a <span class="highlight"> GraphQL</span> gateway.</li>
-                <li>Recruited and mentored co-ops through onboarding sessions, weekly 1-1s and code reviews.</li>
+                <!-- <li>Recruited and mentored co-ops through onboarding sessions, weekly 1-1s and code reviews.</li> -->
               </ul>
             </div>
           </div>
@@ -206,7 +231,7 @@
               <ul>
                 <li>Worked on the core infrastructure of the <span class="highlight">Advertising Data Platform</span>, that handles tens of PBs of data monthly.</li>
                 <li>Reduced data storage costs by modifying open source <span class="highlight">Hadoop</span> code to integrate with an internal Amazon service, allowing analysts to create <span class="highlight">Hive</span> jobs and write distributed queries on encrypted data stored in <span class="highlight">AWS S3</span>.</li>
-                <li>Performed benchmark tests with <span class="highlight">Hive</span>, querying terabytes of data to compare performance tradeoffs at scale between  <span class="highlight">HDFS</span> and  <span class="highlight">S3</span>.</li>
+                <li>Performed benchmark tests with <span class="highlight">Hive</span>, querying terabytes of data to compare performance tradeoffs between  <span class="highlight">HDFS</span> and  <span class="highlight">S3</span>.</li>
               </ul>
             </div>
           </div>
@@ -216,7 +241,7 @@
             <div class="col-xs-offset-1 col-xs-3 place-date">Sept 2016 - Dec 2016</div>
             <div class="col-xs-12 details">
               <ul>
-                <li>Developed a <span class="highlight">reusable </span> and <span class="highlight"> highly-available</span> infrastructure to reduce time to iterate on Data Science projects using <span class="highlight">EC2, Docker, Terraform</span>.</li>
+                <li>Developed a <span class="highlight">reusable </span> and <span class="highlight"> highly-available</span> infrastructure for Data Science projects using <span class="highlight">EC2, Docker, Terraform</span>.</li>
                 <li>Wrote a <span class="highlight">Node.js API</span> that integrated with internal data models and services, to present Mobile Beta users with their predicted recurring monthly credit card transactions.</li>
                 <!-- <li>Developed the API with Node.js and Express to  and data models. Added tests using Chai, Mocha and Sinon to prevent regression bugs, mock external dependencies and test fault tolerance.</li> -->
               </ul>
@@ -276,15 +301,15 @@
         <div class="row skill-details">
           <div class="col-xs-6">
             <ul>
-              <li><span class="skill-title">Languages: </span>Python, JavaScript, Typescript, Java, C/C++</li>
-              <li><span class="skill-title">Data Analysis: </span>Numpy, Pandas, Matplotlib, Scikit-learn,</li>
-              <li><span class="skill-title">Dev Ops: </span> Bash, Docker, Kubernetes, Terraform, AWS ECS, RabbitMQ </li>
+              <li><span class="skill-title">Languages: </span>Typescript, Python, JavaScript, Java, C/C++</li>
+              <!-- <li><span class="skill-title">Data Analysis: </span>Numpy, Pandas, Matplotlib, Scikit-learn,</li> -->
+              <li><span class="skill-title">Cloud: </span> AWS (S3, EC2, Lambda, Infra as Code), Bash, Docker</li>
             </ul>
           </div>
           <div class="col-xs-6">
             <ul>
               <li><span class="skill-title">Web: </span>HTML/CSS, Node.js, Express, React, Django, Flask</li>
-              <li><span class="skill-title">Database: </span>MySQL, PostgreSQL, MongoDB, Redis</li>
+              <li><span class="skill-title">Database: </span>MongoDB, MySQL, PostgreSQL, Redis</li>
             </ul>
           </div>
         </div>
@@ -307,10 +332,10 @@
                 <span class="tech">Tech Used: C++, ROS <span>
               </li>
 
-              <li><span class="project-title">Personal Finance Chatbot : </span>
+              <!-- <li><span class="project-title">Personal Finance Chatbot : </span>
                 (October 2016) Developed a Facebook Messenger chatbot that allows individuals to keep track of their finances, set savings goals and visualize their spending patterns.
                 <span class="tech">Tech Used: Python, Flask, Node.js, Express, AWS EC2, MongoDB, jQuery</span>
-              </li>
+              </li> -->
               <!-- <li><span class="project-title">Audio Player : </span>
                 (June 2016) Designed a microcontroller system that plays .wav files from an SD card. Implemented device drivers to read data from  <br>a FAT filesystem,
                 and send audio data through an audio CODEC for playback.
@@ -363,14 +388,14 @@
           <div class="col-xs-12 details" >
             <ul>
               <li> BASc in Mechatronics Engineering, Honours, Co-operative Program. Graduated with distinction. </li>
-              <li> <span class="skill-title"> Coursework: </span> Algorithms and Data Structures, Statistical Analysis, Pattern Recognition, Design and Analysis of Algorithms
+              <li> <span class="skill-title"> Coursework: </span> Autonomous Mobile Robots, Algorithms and Data Structures, Statistical Analysis
               </ul>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-xs-4 job-title">Online Coursework - Coursera</div>
-          </div>
-          <div class="row">
+          </div> -->
+          <!-- <div class="row">
             <div class="col-xs-4 course-details" >
               <ul>
                 <li> Machine Learning  </li>
@@ -387,7 +412,7 @@
               </ul>
             </div>
 
-          </div>
+          </div> -->
         </div>
       </div>
 
